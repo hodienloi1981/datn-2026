@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồ án tốt nghiệp</title>
+    <link rel="icon" type="image/png" href="https://github.com/hodienloi1981/datn-2026/blob/master/hitu.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class="bg-[#0578D4] text-white">
+        <div class="mx-auto md:px-4 px-2 p-3">
+            <h1 class="md:text-3xl text-xl md:text-left text-center">DANH SÁCH ĐỒ ÁN TỐT NGHIỆP</h1>
+            <h2 class="md:text-2xl text-md md:text-left text-center">Khoa công nghệ thông tin</h2>
+        </div>
+    </header>
+    <main class="py-5">
+        <div class="mx-auto md:px-4 px-2">
+            <div class="flex md:flex-row flex-col gap-4">
+                <div class="md:basis-2/12 md:order-1 order-2">
+                    <h2 class="text-xl font-bold">DANH SÁCH GIÁO VIÊN</h2>
+                    <ul class="flex flex-col" id="list_giaovien"></ul>
+                </div>
+                <div class="md:basis-10/12 md:order-2 order-1">
+                    <h1 class="text-3xl pb-3 font-bold md:text-left text-center">DANH SÁCH ĐỒ ÁN</h1>
+                    <table class="w-full border-collapse border-2 border-gray-600 mb-4">
+                        <thead>
+                            <tr>
+                                <td class="border border-gray-300 p-3 font-bold w-10 text-center">STT</td>
+                                <td class="border border-gray-300 p-3 font-bold">
+                                    Tên đề tài
+                                </td>
+                                <td class="border border-gray-300 p-3 font-bold">
+                                    Giáo viên hướng dẫn
+                                </td>
+                                <td class="border border-gray-300 p-3 font-bold text-center w-30">
+                                    Số SV tối đa
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody id="dsdoan"></tbody>
+                    </table>
+                    <!-- <table class="w-full border-collapse border-2 border-gray-600 mb-4">
+                        <tbody>
+                            <tr>
+                                <td class="border border-gray-300 p-3" style="width: 20%;">Tên đề tài 1</td>
+                                <td class="border border-gray-300 p-3 font-bold">
+                                    Xây dựng website gia sư
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3">Tóm tắt nội dung</td>
+                                <td class="border border-gray-300 p-3  space-y-3">
+                                    <p> Website gia sư là một nền tảng trung gian kết nối người học và giáo viên, được
+                                        vận
+                                        hành và kiểm soát bởi người quản lý nhằm đảm bảo hoạt động minh bạch, hiệu quả.
+                                    </p>
+                                    <p>a. Người quản lý (Admin)</p>
+                                    <p>- Quản lý tài khoản người học và giáo viên;</p>
+                                    <p>- Kiểm duyệt thông tin đăng ký, bài đăng tìm gia sư / tìm học sinh;</p>
+                                    <p>- Quản lý môn học, cấp độ, khu vực, hình thức học (online/offline);</p>
+                                    <p>- Theo dõi thống kê, xử lý vi phạm, hỗ trợ người dùng;</p>
+                                    <p>- Báo cáo doanh thu;</p>
+                                    <p>- Quảng bá thông tin giảng viên, người học lên mạng xã hội, công cụ thìm kiếm để
+                                        tìm
+                                        kiếm người học</p>
+                                    <p>b. Người học
+                                    <p>- Đăng ký / đăng nhập hệ thống;</p>
+                                    <p>- Đăng nhu cầu học: môn học, trình độ, thời gian, hình thức, học phí;</p>
+                                    <p>- Tìm kiếm và chủ động chọn giáo viên phù hợp;</p>
+                                    <p>- Gửi yêu cầu học và trao đổi với giáo viên</p>
+                                    <p> c. Giáo viên</p>
+                                    <p>- Đăng ký / đăng nhập hệ thống;</p>
+                                    <p>- Tạo hồ sơ giảng dạy: chuyên môn, kinh nghiệm, lịch dạy, học phí</p>
+                                    <p>- Nạp tiền vào hệ thống để chọn học sinh hoặc xác nhận yêu cầu chọn lớp của người
+                                        học.</p>
+                                    <p>- Xem nhu cầu người học và chọn học sinh phù hợp</p>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3">Các yêu cầu cần đạt được:</td>
+                                <td class="border border-gray-300 p-3  space-y-3">
+                                    <p>a. Hệ thống hỗ trợ 3 vai trò: Admin, Người học, Giáo viên với phân quyền rõ ràng
+                                    </p>
+                                    <p>b. Cho phép người học và giáo viên đăng ký, đăng nhập, xác thực và quản lý tài
+                                        khoản</p>
+                                    <p>c. Giáo viên tạo và cập nhật hồ sơ giảng dạy (chuyên môn, kinh nghiệm, lịch dạy,
+                                        học phí)</p>
+                                    <p>d. Người học đăng và quản lý nhu cầu học tập (môn học, trình độ, thời gian, hình
+                                        thức học, học phí)</p>
+                                    <p>e. Hệ thống cho phép tìm kiếm và lọc gia sư hoặc học viên theo nhiều tiêu chí</p>
+                                    <p>f. Người học và giáo viên gửi yêu cầu học, trao đổi thông tin hai chiều</p>
+                                    <p>g. Giáo viên nạp tiền và hệ thống quản lý các giao dịch phát sinh</p>
+                                    <p>h. Admin kiểm duyệt tài khoản, bài đăng và xử lý vi phạm</p>
+                                    <p>i. Hệ thống thống kê, báo cáo người dùng, lớp học và doanh thu</p>
+                                    <p>j. Hỗ trợ chia sẻ, quảng bá thông tin gia sư và người học trên mạng xã hội và
+                                        công cụ tìm kiếm</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3">Số sinh viên</td>
+                                <td class="border border-gray-300 p-3">
+                                    2
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="w-full border-collapse border-2 border-gray-600">
+                        <tbody>
+                            <tr>
+                                <td class="border border-gray-300 p-3" style="width: 20%;">Tên đề tài 2</td>
+                                <td class="border border-gray-300 p-3 font-bold">
+                                    Xây dựng website thi trắc nghiệm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3">Tóm tắt nội dung</td>
+                                <td class="border border-gray-300 p-3 space-y-3">
+                                    <p> Website thi trắc nghiệm là một nền tảng trực tuyến hỗ trợ tạo, quản lý và
+                                        thực
+                                        hiện
+                                        các bài thi trắc nghiệm, phục vụ cho việc học tập, ôn luyện và đánh giá kiến
+                                        thức.
+                                        Hệ thống cho phép người tạo câu hỏi xây dựng ngân hàng câu hỏi theo chủ đề,
+                                        người
+                                        học tham gia làm bài thi và người quản lý giám sát toàn bộ hoạt động hệ
+                                        thống.
+                                    </p>
+                                    <p>a. Người quản lý (Admin)</p>
+                                    <p>- Người quản lý chịu trách nhiệm vận hành và kiểm soát toàn bộ hệ thống:</p>
+                                    <p>- Quản lý người dùng (người tạo câu hỏi, người học)</p>
+                                    <p>- Quản lý danh mục, chủ đề thi</p>
+                                    <p>- Kiểm duyệt nội dung câu hỏi và bài thi</p>
+                                    <p>- Theo dõi thống kê, báo cáo kết quả thi</p>
+                                    <p>- Đảm bảo hệ thống hoạt động ổn định, minh bạch</p>
+                                    <p>b. Người tạo câu hỏi trắc nghiệm</p>
+                                    <p>- Tạo và quản lý chủ đề / môn học</p>
+                                    <p>- Tạo câu hỏi trắc nghiệm:</p>
+                                    <p class="pl-3">+ Nội dung câu hỏi</p>
+                                    <p class="pl-3">+ Loại câu hỏi</p>
+                                    <p class="pl-3">+ Đáp án đúng</p>
+                                    <p class="pl-3">+ Mức độ (dễ – trung bình – khó)</p>
+                                    <p class="pl-3">+ Miễn phí hay có phí</p>
+                                    <p>- Xây dựng ngân hàng câu hỏi phục vụ thi</p>
+                                    <p>c. Người học</p>
+                                    <p>- Đăng ký / đăng nhập hệ thống</p>
+                                    <p>- Nạp tiền vào hệ thống để tiến hành bài thi</p>
+                                    <p>- Chọn chủ đề hoặc bài thi trắc nghiệm</p>
+                                    <p>- Thực hiện bài thi trong thời gian quy định</p>
+                                    <p>- Nộp bài và xem kết quả</p>
+                                    <p>- Xem lại đáp án, điểm số và lịch sử làm bài</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3">Các yêu cầu cần đạt được:</td>
+                                <td class="border border-gray-300 p-3  space-y-3">
+                                    <p>a. Hệ thống hỗ trợ nhiều vai trò người dùng: Admin, Người tạo câu hỏi, Người học
+                                        với phân quyền rõ ràng</p>
+                                    <p>b. Cho phép người dùng đăng ký, đăng nhập, xác thực và quản lý tài khoản cá nhân
+                                    </p>
+                                    <p>c. Admin quản lý người dùng, danh mục, chủ đề và toàn bộ hoạt động của hệ thống
+                                    </p>
+                                    <p>d. Người tạo câu hỏi có thể tạo, chỉnh sửa và quản lý chủ đề hoặc môn học</p>
+                                    <p>e. Hệ thống cho phép tạo câu hỏi trắc nghiệm với đầy đủ thông tin: nội dung, loại
+                                        câu hỏi, đáp án đúng, mức độ, miễn phí hoặc có phí</p>
+                                    <p>f. Hỗ trợ xây dựng và quản lý ngân hàng câu hỏi phục vụ cho các bài thi trắc
+                                        nghiệm</p>
+                                    <p>g. Admin kiểm duyệt nội dung câu hỏi và bài thi trước khi đưa vào sử dụng</p>
+                                    <p>h. Người học có thể nạp tiền vào hệ thống để tham gia các bài thi trắc nghiệm có
+                                        phí</p>
+                                    <p>i. Hệ thống cho phép người học chọn bài thi, làm bài trong thời gian quy định,
+                                        nộp bài và xem kết quả</p>
+                                    <p>j. Lưu trữ lịch sử làm bài, điểm số, đáp án chi tiết và hỗ trợ thống kê, báo cáo
+                                        kết quả thi</p>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3">Số sinh viên</td>
+                                <td class="border border-gray-300 p-3">
+                                    2
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table> -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-black text-white">
+        <div class="mx-auto md:md-4 md-2">
+            <h4 class="text-xs py-3 text-center">Khoa CNTT - Trường cao đẳng Công Thương TP Hồ Chí Minh</h4>
+        </div>
+    </footer>
+    <script src="giaovien.js"></script>
+    <script src="dsdoan.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phạm Văn Sơn</title>
+    <link rel="icon" type="image/png" href="https://github.com/hodienloi1981/datn-2026/blob/master/hitu.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class="bg-[#0578D4] text-white">
+        <div class="mx-auto md:px-4 px-2 p-3">
+            <h1 class="md:text-3xl text-xl md:text-left text-center">
+                <a href="https://hodienloi1981.github.io/datn-2026/">
+                    DANH SÁCH ĐỒ ÁN TỐT NGHIỆP
+                </a>
+            </h1>
+            <h2 class="md:text-2xl text-md md:text-left text-center">Khoa công nghệ thông tin</h2>
+        </div>
+    </header>
+    <main class="py-5">
+        <div class="mx-auto md:px-4 px-2">
+            <div class="flex md:flex-row flex-col gap-4">
+                <div class="md:basis-2/12 md:order-1 order-2">
+                    <h2 class="text-xl font-bold">DANH SÁCH GIÁO VIÊN</h2>
+                    <ul class="flex flex-col" id="list_giaovien"></ul>
+                </div>
+                <div class="md:basis-10/12 md:order-2 order-1">
+                    <h1 class="text-3xl pb-3 font-bold md:text-left text-center">PHẠM VĂN SƠN</h1>
+                    <table class="w-full border-collapse border-2 border-gray-600 mb-4">
+                        <tbody>
+                            <tr>
+                                <td class="border border-gray-300 p-3" style="width: 20%;">Tên đề tài 1</td>
+                                <td class="border border-gray-300 p-3 font-bold">
+                                    Kiểm thử website (tin tức, bán hàng, giáo dục…)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3">Tóm tắt nội dung</td>
+                                <td class="border border-gray-300 p-3 space-y-3">
+                                    <p>- Dựa vào sản phẩm là các website, sinh viên trao đổi với khách hàng hoặc đối tác
+                                        về
+                                        những nội dung sẽ test (theo hợp đồng hoặc thoả thuận giữa các bên) từ đó phân
+                                        tích
+                                        và xác định nội dung test.
+                                    </p>
+                                    <p>- Lập kế hoạch kiểm thử (dạng văn bản và file excel theo mẫu GVHD cung cấp)</p>
+                                    <p>- Thiết kế test case (theo mẫu GVHD cung cấp)</p>
+                                    <p>- Nghiên cứu và lựa chọn công cụ kiểm thử phù hợp với website cần test (ví dụ:
+                                        Katalon Studio, Test Complete, PostMan, Selenium IDE, Nunit, Junit…)</p>
+                                    <p>- Thực hiện test bằng tay (manual test) hoặc test tự động dùng tool (automation
+                                        test)</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3">Các yêu cầu cần đạt được:</td>
+                                <td class="border border-gray-300 p-3 space-y-3">
+                                    <p>4.1. Tìm hiểu đề tài, xác định mục đích, yêu cầu, nội dung nghiên cứu và cấu trúc
+                                        một báo cáo (KLTN/TTTN)</p>
+                                    <p>4.2. Hệ thống hoá và trình bày những lý thuyết liên quan đến đề tài KLTN/TTTN</p>
+                                    <p>4.3. Dựa vào sản phẩm kiểm thử: phân tích yêu cầu khách hàng và trên thực tế sản
+                                        phẩm, lập kế hoạch kiểm thử chi tiết (dạng file word/excel)</p>
+                                    <p>4.4. Thiết kế test case chi tiết có dữ liệu kiểm thử (test data) để thực hiện
+                                        test
+                                        bằng tay hoặc bằng tool</p>
+                                    <p>4.5. Từ test data thực hiện test và viết báo cáo kiểm thử (báo cáo lỗi) xuất ra
+                                        từ
+                                        phần mềm dưới dạng file PDF/SCV hoặc theo mẫu sinh viên đã phân tích và hoàn
+                                        thành
+                                        KLTN/TTTN</p>
+                                    <p>4.6. Đánh giá kết quả đạt được và những hạn chế (nếu có)
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3">Số sinh viên</td>
+                                <td class="border border-gray-300 p-3">
+                                    2
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="w-full border-collapse border-2 border-gray-600">
+                        <tbody>
+                            <tr>
+                                <td class="border border-gray-300 p-3" style="width: 20%;">Tên đề tài 2</td>
+                                <td class="border border-gray-300 p-3 font-bold">
+                                    Kiểm thử ứng dụng (apps) trên nền windows/Android/IOS
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3">Tóm tắt nội dung</td>
+                                <td class="border border-gray-300 p-3 space-y-3">
+                                    <p>
+                                        - Dựa vào sản phẩm là các apps trên windows, sinh viên trao đổi với khách hàng
+                                        hoặc
+                                        đối tác về những moduls hay chức năng sẽ test (theo hợp đồng hoặc thoả thuận
+                                        giữa
+                                        các bên) từ đó phân tích và xác định nội dung test.
+                                    </p>
+                                    <p>
+                                        - Lập kế hoạch kiểm thử (dạng văn bản và file excel theo mẫu GVHD cung cấp)
+                                    </p>
+                                    <p> - Dựa vào các modul khách hàng đề xuất hoặc từ chính sản phẩm sinh viên lựa
+                                        chọn,
+                                        vận dụng kỹ 4 kỹ thuật kiểm thử hộp đen thiết kế test case kiểm thử đầu vào cho
+                                        sản
+                                        phẩm.</p>
+                                    <p>
+                                        - Kết hợp với kỹ thuật kiểm thử hộp trắng, lựa chọn code sau đó:
+                                    </p>
+                                    <p class="pl-3">
+                                        + Vẽ đồ thị, xác định các đường thi hành và kiểm chứng tính đúng đắn của các
+                                        giải
+                                        thuật xem có thoả mãn các độ đo kiểm thử chưa, sau đó tìm và báo cáo lội (nếu
+                                        có).
+                                    </p>
+                                    <p class="pl-3">
+                                        + Dựa vào code, vẽ đồ thị và xác định đời sống của các biến, kiểm chứng xem các
+                                        biến
+                                        đã được khai báo và sử dụng đúng chưa, sau đó tìm lỗi và viết báo cáo lỗi (nếu
+                                        có).
+                                    </p>
+                                    <p>
+                                        - Nghiên cứu và lựa chọn công cụ kiểm thử phù hợp với website cần test (ví dụ:
+                                        Katalon Studio, Test Complete, PostMan, Selenium IDE, Nunit, Junit…)
+                                    </p>
+                                    <p>
+                                        - Thực hiện test bằng tay (manual test) hoặc test tự động dùng tool (automation
+                                        test)
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3">Các yêu cầu cần đạt được:</td>
+                                <td class="border border-gray-300 p-3 space-y-3">
+                                    <p>4.1. Tìm hiểu đề tài, xác định mục đích, yêu cầu, nội dung nghiên cứu và cấu trúc
+                                        một báo cáo (KLTN/TTTN)</p>
+                                    <p>4.2. Hệ thống hoá và trình bày những lý thuyết liên quan đến đề tài KLTN/TTTN</p>
+                                    <p>4.3. Dựa vào sản phẩm kiểm thử: phân tích yêu cầu khách hàng và trên thực tế sản
+                                        phẩm, lập kế hoạch kiểm thử chi tiết (dạng file word/excel)</p>
+                                    <p>4.4. Thiết kế test case chi tiết có dữ liệu kiểm thử (test data) để thực hiện
+                                        test
+                                        bằng tay hoặc bằng tool</p>
+                                    <p>4.5. Từ test data thực hiện test và viết báo cáo kiểm thử (báo cáo lỗi) xuất ra
+                                        từ
+                                        phần mềm dưới dạng PDF/SCV hoặc theo mẫu sinh viên đã phân tích và hoàn thành
+                                        KLTN/TTTN</p>
+                                    <p>4.6. Đánh giá kết quả đạt được và những hạn chế (nếu có)</p>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3">Số sinh viên</td>
+                                <td class="border border-gray-300 p-3">
+                                    2
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-black text-white">
+        <div class="mx-auto md:md-4 md-2">
+            <h4 class="text-xs py-3 text-center">Khoa CNTT - Trường cao đẳng Công Thương TP Hồ Chí Minh</h4>
+        </div>
+    </footer>
+    <script src="giaovien.js"></script>
+</body>
+
+</html>
