@@ -8,7 +8,7 @@ const list_giaovien = [
     { id: 7, 'name': 'Phạm Văn Sơn', 'link': 'phamvanson.html' },
     // { id: 8, 'name': 'Trương Quang Mạnh', 'link': 'truongquangmanh.html' },
     { id: 9, 'name': 'Hồ Diên Lợi', 'link': 'hodienloi.html' },
-    // { id: 10, 'name': 'Nguyễn Thái Khánh Quyên', 'link': 'nguyenthaikhanhquyen.html' },
+    { id: 10, 'name': 'Nguyễn Thái Khánh Quyên', 'link': 'nguyenthaikhanhquyen.html' },
     { id: 11, 'name': 'Nguyễn Xuân Nhựt', 'link': 'nguyenxuannhut.html' },
     { id: 12, 'name': 'Đặng Hồng Hiệp', 'link': 'danghonghiep.html' },
     // { id: 13, 'name': 'Bùi Trọng Viên', 'link': 'buitrongvien.html' },

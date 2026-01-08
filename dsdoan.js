@@ -65,8 +65,20 @@ const list_doan = [
         link: 'hodienloi.html',
         number: 2,
     },
-    // { id: 19, name: 'Tên đề tài 1', teacher: 'Nguyễn Thái Khánh Quyên', 'link': 'nguyenthaikhanhquyen.html', number: 2 },
-    // { id: 20, name: 'Tên đề tài 2', teacher: 'Nguyễn Thái Khánh Quyên', 'link': 'nguyenthaikhanhquyen.html', number: 2 },
+    {
+        id: 19,
+        name: 'Xây dựng ứng dụng đặt phòng khách sạn',
+        teacher: 'Nguyễn Thái Khánh Quyên',
+        link: 'nguyenthaikhanhquyen.html',
+        number: 2,
+    },
+    {
+        id: 20,
+        name: 'Tên đề tài 2',
+        teacher: 'Nguyễn Thái Khánh Quyên',
+        link: 'nguyenthaikhanhquyen.html',
+        number: 2,
+    },
     {
         id: 21,
         name: 'XÂY DỰNG PHẦN MỀM GAME 3D BẰNG UNITY ENGINE',
