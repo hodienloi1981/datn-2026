@@ -33,40 +33,114 @@
                         <tbody>
                             <tr>
                                 <td class="border border-gray-300 p-3" style="width: 20%;">Tên đề tài 1</td>
-                                <td class="border border-gray-300 p-3">
-                                    Xây dựng ứng dụng web bán hàng quần áo thời trang
+                                <td class="border border-gray-300 p-3 font-bold">
+                                    Xây dựng Hệ thống Quản lý Bán hàng và Kho cho Doanh nghiệp nhỏ sử dụng Laravel
+                                    Framework
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Tóm tắt nội dung</td>
                                 <td class="border border-gray-300 p-3 space-y-3">
-                                    Xây dựng ứng dụng web bán hàng quần áo thời trang, cho phép người mua xem sản phẩm,
-                                    đặt hàng online.
+                                    <p class="font-bold">
+                                        a. Tính cấp thiết của đề tài
+                                    </p>
+                                    <p>Hiện nay, nhiều cửa hàng và doanh nghiệp nhỏ tại Việt Nam vẫn quản lý bán hàng,
+                                        kho
+                                        và doanh thu bằng Excel hoặc ghi chép thủ công, gây:</p>
+                                    <p class="pl-3">- Sai sót dữ liệu</p>
+                                    <p class="pl-3">- Khó quản lý tồn kho</p>
+                                    <p class="pl-3">- Không có báo cáo doanh thu rõ ràng</p>
+                                    <p class="pl-3">Đề tài xây dựng một hệ thống web quản lý bán hàng – kho – khách
+                                        hàng, phù hợp với
+                                        thực tế doanh nghiệp nhỏ và vừa.</p>
+                                    <p class="font-bold">
+                                        b. Backend & Frontend: Laravel Framework
+                                    </p>
+                                    <p class="pl-3"> Laravel là framework PHP được doanh nghiệp tuyển dụng nhiều nhất
+                                        hiện nay</p>
+                                    <p class="pl-3">- Cung cấp:</p>
+                                    <p class="pl-6">o MVC rõ ràng</p>
+                                    <p class="pl-6">o ORM Eloquent</p>
+                                    <p class="pl-6">o Hệ thống xác thực & phân quyền</p>
+                                    <p class="pl-3">- Giao diện xây dựng bằng Blade Template + Bootstrap / TailwindCSS
+                                    </p>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Các yêu cầu cần đạt được:</td>
                                 <td class="border border-gray-300 p-3 space-y-3">
-                                    <p>a. Các chức năng xác thực người dùng</p>
-                                    <ul>
-                                        <li>- Đăng ký</li>
-                                        <li>- Đăng nhập</li>
-                                        <li>- Đăng xuất</li>
-                                        <li>- Reset mật khẩu</li>
-                                    </ul>
-                                    <p> b. Các chức năng bán hàng:</p>
-                                    <ul>
-                                        <li>- Hiển thị danh sách sản phẩm, chi tiết sản phẩm</li>
-                                        <li>- Giỏ hàng, thanh toán</li>
-                                        <li>- Xem thông tin người dùng</li>
-                                    </ul>
-                                    <p>c.Các chức năng quản trị</p>
-                                    <ul>
-                                        <li>- Quản lý user</li>
-                                        <li>- Quản lý sản phẩm</li>
-                                        <li>- Quản lý đơn hàng</li>
-                                        <li>- ...</li>
-                                    </ul>
+                                    <p class="font-bold">a. Các chức năng chính</p>
+                                    <p>
+                                        <i>
+                                            a.1. Quản lý người dùng
+                                        </i>
+                                    </p>
+                                    <p>- Đăng nhập / đăng xuất</p>
+                                    <p>- Phân quyền:</p>
+                                    <p class="pl-3">o Admin</p>
+                                    <p class="pl-3">o Nhân viên bán hàng</p>
+                                    <p>- Đổi mật khẩu</p>
+                                    <p>
+                                        <i>
+                                            a.2. Quản lý sản phẩm
+                                        </i>
+                                    </p>
+                                    <p>- Thêm / sửa / xóa sản phẩm</p>
+                                    <p>- Quản lý danh mục sản phẩm</p>
+                                    <p>- Upload hình ảnh sản phẩm</p>
+                                    <p>- Quản lý giá bán</p>
+                                    <p>
+                                        <i>
+                                            a.3. Quản lý kho hàng
+                                        </i>
+                                    </p>
+                                    <p>- Nhập kho sản phẩm</p>
+                                    <p>- Xuất kho khi bán hàng</p>
+                                    <p>- Tự động cập nhật tồn kho</p>
+                                    <p>- Thông báo sản phẩm sắp hết hàng</p>
+                                    <p>
+                                        <i>
+                                            a.4. Quản lý đơn hàng
+                                        </i>
+                                    </p>
+                                    <p>- Tạo đơn bán hàng</p>
+                                    <p>- Tính tổng tiền</p>
+                                    <p>- Cập nhật trạng thái đơn hàng</p>
+                                    <p>- Lưu lịch sử giao dịch</p>
+                                    <p>
+                                        <i>
+                                            a.5. Quản lý khách hàng
+                                        </i>
+                                    </p>
+                                    <p>- Lưu thông tin khách hàng</p>
+                                    <p>- Tra cứu lịch sử mua hàng</p>
+                                    <p>
+                                        <i>
+                                            a.6. Báo cáo & thống kê
+                                        </i>
+                                    </p>
+                                    <p>- Báo cáo doanh thu theo ngày / tháng</p>
+                                    <p>- Báo cáo sản phẩm bán chạy</p>
+                                    <p>- Báo cáo tồn kho</p>
+                                    <p>- Hiển thị biểu đồ trực quan</p>
+                                    <p class="font-bold">b. Công nghệ sử dụng</p>
+                                    <p>
+                                        <i>
+                                            b.1. Backend & Frontend
+                                        </i>
+                                    </p>
+                                    <p>- PHP 8.x</p>
+                                    <p>- Laravel 11/12</p>
+                                    <p>- MySQL</p>
+                                    <p>- Blade Template</p>
+                                    <p>- Bootstrap / TailwindCSS</p>
+                                    <p>
+                                        <i>
+                                            b.2. Công cụ
+                                        </i>
+                                    </p>
+                                    <p>- XAMPP / Laragon</p>
+                                    <p>- Git (quản lý source code)</p>
                                 </td>
                             </tr>
                             <tr>
@@ -81,40 +155,89 @@
                         <tbody>
                             <tr>
                                 <td class="border border-gray-300 p-3" style="width: 20%;">Tên đề tài 2</td>
-                                <td class="border border-gray-300 p-3">
-                                    Xây dựng ứng dụng web bán máy tính
+                                <td class="border border-gray-300 p-3 font-bold">
+                                    Xây dựng Hệ thống Quản lý Bán hàng và Kho cho Doanh nghiệp vừa và nhỏ (SME) sử dụng
+                                    Django REST API và React.js
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Tóm tắt nội dung</td>
                                 <td class="border border-gray-300 p-3 space-y-3">
-                                    Xây dựng ứng dụng web bán máy tính, cho phép người mua xem sản phẩm, đặt hàng
-                                    online.
+                                    <p class="font-bold">a. Bối cảnh & tính thực tiễn</p>
+                                    <p>Hiện nay, phần lớn doanh nghiệp vừa và nhỏ (SME) tại Việt Nam vẫn quản lý bán
+                                        hàng,
+                                        kho, đơn hàng bằng Excel hoặc sổ sách, dẫn đến:</p>
+                                    <p>- Dữ liệu rời rạc, dễ sai sót</p>
+                                    <p>- Khó theo dõi tồn kho, doanh thu</p>
+                                    <p>- Không có báo cáo trực quan</p>
+                                    <p>Đề tài hướng đến việc xây dựng một hệ thống web quản lý bán hàng – kho – khách
+                                        hàng,
+                                        phù hợp với các cửa hàng, doanh nghiệp nhỏ, đáp ứng nhu cầu thực tế của doanh
+                                        nghiệp.
+                                    </p>
+                                    <p class="font-bold">b. Backend: Django & Django REST Framework</p>
+                                    <p>- Xây dựng hệ thống backend bằng Django</p>
+                                    <p>- Thiết kế RESTful API bằng Django REST Framework</p>
+                                    <p>- Quản lý dữ liệu với Django ORM</p>
+                                    <p>- Phân quyền người dùng (Admin – Nhân viên)</p>
+                                    <p>- Bảo mật API bằng JWT Authentication</p>
+                                    <p>- Quản lý dữ liệu sản phẩm, kho, đơn hàng, khách hàng</p>
+                                    <p class="font-bold">c. Frontend: React.js</p>
+                                    <p>- Xây dựng giao diện SPA (Single Page Application)</p>
+                                    <p>- Giao tiếp với backend thông qua REST API</p>
+                                    <p>- Quản lý trạng thái bằng Context API hoặc Redux</p>
+                                    <p>- Thiết kế giao diện hiện đại, dễ sử dụng, phù hợp môi trường doanh nghiệp</p>
+
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Các yêu cầu cần đạt được:</td>
                                 <td class="border border-gray-300 p-3  space-y-3">
-                                    <p>a. Các chức năng xác thực người dùng</p>
-                                    <ul>
-                                        <li>- Đăng ký</li>
-                                        <li>- Đăng nhập</li>
-                                        <li>- Đăng xuất</li>
-                                        <li>- Reset mật khẩu</li>
-                                    </ul>
-                                    <p> b. Các chức năng bán hàng:</p>
-                                    <ul>
-                                        <li>- Hiển thị danh sách sản phẩm, chi tiết sản phẩm</li>
-                                        <li>- Giỏ hàng, thanh toán</li>
-                                        <li>- Xem thông tin người dùng</li>
-                                    </ul>
-                                    <p>c.Các chức năng quản trị</p>
-                                    <ul>
-                                        <li>- Quản lý user</li>
-                                        <li>- Quản lý sản phẩm</li>
-                                        <li>- Quản lý đơn hàng</li>
-                                        <li>- ...</li>
-                                    </ul>
+                                    <p class="font-bold">a. Các chức năng chính của hệ thống</p>
+                                    <p><i>a.1. Quản lý người dùng</i></p>
+                                    <p>- Đăng nhập / đăng xuất hệ thống</p>
+                                    <p>- Phân quyền:</p>
+                                    <p class="pl-3">o Admin: toàn quyền quản lý</p>
+                                    <p class="pl-3">o Nhân viên: tạo đơn hàng, xem sản phẩm</p>
+                                    <p>- Đổi mật khẩu, bảo mật tài khoản</p>
+                                    <p><i>a.2. Quản lý sản phẩm</i></p>
+                                    <p>- Thêm, sửa, xóa sản phẩm</p>
+                                    <p>- Quản lý danh mục sản phẩm</p>
+                                    <p>- Quản lý giá bán, hình ảnh sản phẩm</p>
+                                    <p>- Theo dõi số lượng tồn kho</p>
+                                    <p><i>a.3. Quản lý kho hàng</i></p>
+                                    <p>- Nhập kho, xuất kho</p>
+                                    <p>- Cập nhật tồn kho tự động theo đơn hàng</p>
+                                    <p>- Cảnh báo sản phẩm sắp hết hàng</p>
+                                    <p><i>a.4. Quản lý đơn hàng</i></p>
+                                    <p>- Tạo đơn bán hàng</p>
+                                    <p>- Cập nhật trạng thái đơn hàng (Chờ xử lý – Đã hoàn thành – Đã hủy)</p>
+                                    <p>- Tính tổng tiền đơn hàng</p>
+                                    <p>- Lưu lịch sử giao dịch</p>
+                                    <p><i>a.5. Quản lý khách hàng</i></p>
+                                    <p>- Lưu thông tin khách hàng</p>
+                                    <p>- Tra cứu lịch sử mua hàng</p>
+                                    <p>- Hỗ trợ chăm sóc khách hàng</p>
+                                    <p><i>a.6. Báo cáo & thống kê</i></p>
+                                    <p>- Thống kê doanh thu theo ngày / tháng</p>
+                                    <p>- Thống kê sản phẩm bán chạy</p>
+                                    <p>- Báo cáo tồn kho</p>
+                                    <p>- Biểu đồ trực quan (Chart.js hoặc Recharts)</p>
+
+                                    <p class="font-bold">b. Công nghệ & thư viện sử dụng</p>
+                                    <p><i>b.1.Backend</i></p>
+                                    <p>- Django</p>
+                                    <p>- Django REST Framework</p>
+                                    <p>- Django ORM</p>
+                                    <p>- Simple JWT (Xác thực)</p>
+                                    <p>- PostgreSQL hoặc MySQL</p>
+                                    <p><i>b.2.Frontend</i></p>
+                                    <p>- React.js</p>
+                                    <p>- React Router</p>
+                                    <p>- Axios</p>
+                                    <p>- Context API / Redux</p>
+                                    <p>- TailwindCSS hoặc Material-UI</p>
+                                    <p>- Chart.js / Recharts</p>
                                 </td>
                             </tr>
                             <tr>

@@ -1,5 +1,5 @@
 const list_giaovien = [
-    // { id: 1, 'name': 'Trần Anh Khoa', 'link': 'trananhkhoa.html' },
+    { id: 1, 'name': 'Trần Anh Khoa', 'link': 'trananhkhoa.html' },
     // { id: 2, 'name': 'Hoàng Trọng Thạch', 'link': 'hoangtrongthach.html' },
     // { id: 3, 'name': 'Nguyễn Minh Trường', 'link': 'nguyenminhtruong.html' },
     // { id: 4, 'name': 'Huỳnh Trọng Đức', 'link': 'huynhtrongduc.html' },
@@ -27,10 +27,12 @@ const list_giaovien = [
     // { id: 25, 'name': 'Trần Anh Khoa', 'link': 'trananhkhoa.html' },
 ];
 var html_link = ``;
+var index = 1;
 list_giaovien.forEach((item) => {
     html_link += `<li>
         <a class="block py-2 hover:text-red-800 hover:border-b border-gray-100"
-        href="${item.link}">${item.id}. ${item.name}</a>
+        href="${item.link}">${index}. ${item.name}</a>
     </li>`;
+    index = index + 1;
 })
 document.getElementById("list_giaovien").innerHTML = html_link;

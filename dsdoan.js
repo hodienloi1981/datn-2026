@@ -1,6 +1,6 @@
 const list_doan = [
-    // { id: 1, name: 'Tên đề tài 1', teacher: 'Trần Anh Khoa', 'link': 'trananhkhoa.html', number: 2 },
-    // { id: 2, name: 'Tên đề tài 2', teacher: 'Trần Anh Khoa', 'link': 'trananhkhoa.html', number: 2 },
+    { id: 1, name: 'Xây dựng Hệ thống Quản lý Bán hàng và Kho cho Doanh nghiệp nhỏ sử dụng Laravel Framework', teacher: 'Trần Anh Khoa', 'link': 'trananhkhoa.html', number: 2 },
+    { id: 2, name: 'Xây dựng Hệ thống Quản lý Bán hàng và Kho cho Doanh nghiệp vừa và nhỏ (SME) sử dụng Django REST API và React.js', teacher: 'Trần Anh Khoa', 'link': 'trananhkhoa.html', number: 2 },
     // { id: 3, name: 'Tên đề tài 1', teacher: 'Hoàng Trọng Thạch', 'link': 'hoangtrongthach.html', number: 2 },
     // { id: 4, name: 'Tên đề tài 2', teacher: 'Hoàng Trọng Thạch', 'link': 'hoangtrongthach.html', number: 2 },
     // { id: 5, name: 'Tên đề tài 1', teacher: 'Nguyễn Minh Trường', 'link': 'nguyenminhtruong.html', number: 2 },
@@ -56,14 +56,14 @@ const list_doan = [
         name: 'Xây dựng website gia sư',
         teacher: 'Hồ Diên Lợi',
         link: 'hodienloi.html',
-        number: 2,
+        number: 4,
     },
     {
         id: 18,
         name: 'Xây dựng website thi trắc nghiệm',
         teacher: 'Hồ Diên Lợi',
         link: 'hodienloi.html',
-        number: 2,
+        number: 4,
     },
     {
         id: 19,
@@ -119,14 +119,14 @@ const list_doan = [
         name: 'Xây dựng web thương mại điện tử tích hợp nhận diện sản phẩm bằng thị giác máy tính và phân tích dữ liệu',
         teacher: 'Trần Nhật Nam',
         link: 'trannhatnam.html',
-        number: 2,
+        number: 5,
     },
     {
         id: 32,
         name: 'Thiết kế và triển khai hệ thống web thương mại điện tử C2C dựa trên kiến trúc Modular Monolith',
         teacher: 'Trần Nhật Nam',
         link: 'trannhatnam.html',
-        number: 2,
+        number: 5,
     },
     // { id: 33, name: 'Tên đề tài 1', teacher: 'Lê Thị Tố Thi', 'link': 'lethitothi.html', number: 2 },
     // { id: 34, name: 'Tên đề tài 2', teacher: 'Lê Thị Tố Thi', 'link': 'lethitothi.html', number: 2 },
@@ -136,15 +136,15 @@ const list_doan = [
     // { id: 38, name: 'Tên đề tài 2', teacher: 'Trần Thị Diễm', 'link': 'tranthidiem.html', number: 2 },
 ];
 var html_tr = ``;
+var stt = 1;
 list_doan.forEach((item) => {
     html_tr += `
         <tr>
-            <td class="border border-gray-300 p-3 text-center">${item.id}</td>
+            <td class="border border-gray-300 p-3 text-center">${stt}</td>
             <td class="border border-gray-300 p-3">
-                <a href="${item.link}">
+                <a href="${item.link}" class="hover:text-red-800 hover:border-b">
                     ${item.name}
-                </a>
-                
+                </a>            
             </td>
             <td class="border border-gray-300 p-3">
                 <a href="${item.link}">
@@ -154,5 +154,6 @@ list_doan.forEach((item) => {
             <td class="border border-gray-300 p-3 text-center">${item.number}</td>
         </tr>
     `;
+    stt = stt + 1;
 });
 document.getElementById('dsdoan').innerHTML = html_tr;
