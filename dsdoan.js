@@ -16,7 +16,7 @@ const list_doan = [
     // { id: 3, name: 'Tên đề tài 1', teacher: 'Hoàng Trọng Thạch', 'link': 'hoangtrongthach.html', number: 2 },
     // { id: 4, name: 'Tên đề tài 2', teacher: 'Hoàng Trọng Thạch', 'link': 'hoangtrongthach.html', number: 2 },
     { id: 5, name: 'Tìm hiểu hệ thống firewall pfsense cho doanh nghiệp', teacher: 'Nguyễn Minh Trường', 'link': 'nguyenminhtruong.html', number: 1 },
-    // { id: 6, name: 'Tên đề tài 2', teacher: 'Nguyễn Minh Trường', 'link': 'nguyenminhtruong.html', number: 2 },
+    { id: 6, name: 'Tìm hiểu và triển khai hệ thống điện toán đám mây OpenStack trên nền Linux ', teacher: 'Nguyễn Minh Trường', 'link': 'nguyenminhtruong.html', number: 2 },
     // { id: 7, name: 'Tên đề tài 1', teacher: 'Huỳnh Trọng Đức', 'link': 'huynhtrongduc.html', number: 2 },
     // { id: 8, name: 'Tên đề tài 2', teacher: 'Huỳnh Trọng Đức', 'link': 'huynhtrongduc.html', number: 2 },
     {
