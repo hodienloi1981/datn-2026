@@ -15,7 +15,7 @@ const list_giaovien = [
     // { id: 14, 'name': 'Thái Thị Huyên', 'link': 'thaithihuyen.html' },
     // { id: 15, 'name': 'Huỳnh Tấn Phát', 'link': 'huynhtanphat.html' },
     { id: 16, 'name': 'Trần Nhật Nam', 'link': 'trannhatnam.html' },
-    // { id: 17, 'name': 'Lê Thị Tố Thi', 'link': 'lethitothi.html' },
+    { id: 17, 'name': 'Lê Thị Tố Thi', 'link': 'lethitothi.html' },
     // { id: 18, 'name': 'Hoàng Mạnh Hùng', 'link': 'hoangmanhhung.html' },
     // { id: 19, 'name': 'Trần Thị Diễm', 'link': 'tranthidiem.html' },
     // { id: 20, 'name': 'Trần Anh Khoa', 'link': 'trananhkhoa.html' },

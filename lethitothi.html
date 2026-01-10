@@ -33,46 +33,112 @@
                         <tbody>
                             <tr>
                                 <td class="border border-gray-300 p-3" style="width: 20%;">Tên đề tài 1</td>
-                                <td class="border border-gray-300 p-3">
-                                    Xây dựng ứng dụng web bán hàng quần áo thời trang
+                                <td class="border border-gray-300 p-3 font-bold">
+                                    Xây dựng hệ thống quản lý chuỗi nhà hàng
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Tóm tắt nội dung</td>
                                 <td class="border border-gray-300 p-3 space-y-3">
-                                    Xây dựng ứng dụng web bán hàng quần áo thời trang, cho phép người mua xem sản phẩm,
-                                    đặt hàng online.
+                                    Đề tài xây dựng hệ thống quản lý chuỗi nhà hàng nhằm quản lý tập trung các chi
+                                    nhánh, thực đơn, nhân viên, đơn hàng, đặt phòng và giao hàng. Hệ thống giúp tự động
+                                    hóa quy trình vận hành, giảm sai sót và nâng cao hiệu quả kinh doanh.
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Các yêu cầu cần đạt được:</td>
                                 <td class="border border-gray-300 p-3 space-y-3">
-                                    <p>a. Các chức năng xác thực người dùng</p>
-                                    <ul>
-                                        <li>- Đăng ký</li>
-                                        <li>- Đăng nhập</li>
-                                        <li>- Đăng xuất</li>
-                                        <li>- Reset mật khẩu</li>
-                                    </ul>
-                                    <p> b. Các chức năng bán hàng:</p>
-                                    <ul>
-                                        <li>- Hiển thị danh sách sản phẩm, chi tiết sản phẩm</li>
-                                        <li>- Giỏ hàng, thanh toán</li>
-                                        <li>- Xem thông tin người dùng</li>
-                                    </ul>
-                                    <p>c.Các chức năng quản trị</p>
-                                    <ul>
-                                        <li>- Quản lý user</li>
-                                        <li>- Quản lý sản phẩm</li>
-                                        <li>- Quản lý đơn hàng</li>
-                                        <li>- ...</li>
-                                    </ul>
+                                    <p class="font-bold">4.1. Chức năng – phần dành cho quản trị:</p>
+                                    <p>- Quản lý thông tin chuỗi nhà hàng và các chi nhánh:</p>
+                                    <p class="pl-3">+ Quản lý thông tin chung của chuỗi nhà hàng</p>
+                                    <p class="pl-3">+ Thêm, sửa, xóa thông tin chi nhánh</p>
+                                    <p class="pl-3">+ Quản lý địa chỉ, số điện thoại, giờ hoạt động của từng chi nhánh
+                                    </p>
+                                    <p class="pl-3">+ Theo dõi trạng thái hoạt động của chi nhánh (đang hoạt động/ngừng
+                                        hoạt động)</p>
+                                    <p class="pl-3">+ Phân quyền quản lý theo từng chi nhánh</p>
+                                    <p>- Quản lý nhân viên và phân quyền sử dụng hệ thống:</p>
+                                    <p class="pl-3">+ Quản lý hồ sơ nhân viên (tên, liên hệ, vị trí công việc)</p>
+                                    <p class="pl-3">+ Phân loại nhân viên Full-time và Part-time</p>
+                                    <p class="pl-3">+ Gán nhân viên làm việc tại từng chi nhánh</p>
+                                    <p class="pl-3">+ Phân quyền theo vai trò (quản trị viên, quản lý, nhân viên)</p>
+                                    <p class="pl-3">+ Quản lý tài khoản đăng nhập của nhân viên</p>
+                                    <p class="pl-3">+ Kiểm soát quyền truy cập và thao tác trên hệ thống</p>
+                                    <p>- Quản lý thực đơn, món ăn và giá bán:</p>
+                                    <p class="pl-3">+ Quản lý danh mục thực đơn</p>
+                                    <p class="pl-3">+ Thêm, sửa, xóa thông tin món ăn</p>
+                                    <p class="pl-3">+ Quản lý giá bán và trạng thái kinh doanh của món</p>
+                                    <p class="pl-3">+ Cập nhật hình ảnh, mô tả món ăn</p>
+                                    <p class="pl-3">+ Cho phép điều chỉnh giá theo từng chi nhánh hoặc thời điểm</p>
+
+                                    <p>- Thực hiện bán hàng, lập hóa đơn và thanh toán:</p>
+                                    <p class="pl-3">+ Tạo đơn hàng tại quầy bán</p>
+                                    <p class="pl-3">+ Quản lý đơn hàng theo trạng thái (chờ xử lý, đã thanh toán)</p>
+                                    <p class="pl-3">+ Lập và lưu trữ hóa đơn bán hàng</p>
+                                    <p class="pl-3">+ Hỗ trợ nhiều hình thức thanh toán</p>
+                                    <p class="pl-3">+ Tra cứu lịch sử đơn hàng và hóa đơn</p>
+
+                                    <p>- Quản lý đặt bàn, đặt phòng và giao hàng:</p>
+                                    <p class="pl-3">+ Quản lý thông tin bàn và phòng tại nhà hàng</p>
+                                    <p class="pl-3">+ Hỗ trợ khách hàng đặt bàn, đặt phòng trước</p>
+                                    <p class="pl-3">+ Quản lý lịch đặt theo thời gian và chi nhánh</p>
+                                    <p class="pl-3">+ Quản lý đơn hàng giao tận nơi</p>
+                                    <p class="pl-3">+ Theo dõi trạng thái giao hàng (đang xử lý, đang giao, hoàn thành)
+                                    </p>
+
+                                    <p>- Quản lý kho nguyên liệu, nhập, xuất kho:</p>
+                                    <p class="pl-3">+ Quản lý danh sách nguyên liệu</p>
+                                    <p class="pl-3">+ Theo dõi số lượng tồn kho theo chi nhánh</p>
+                                    <p class="pl-3">+ Thực hiện nhập kho, xuất kho nguyên liệu</p>
+                                    <p class="pl-3">+ Cập nhật tồn kho tự động khi bán hàng</p>
+                                    <p class="pl-3">+ Cảnh báo nguyên liệu sắp hết</p>
+
+                                    <p>- Thống kê, báo cáo doanh thu và tình hình kinh doanh:</p>
+                                    <p class="pl-3">+ Thống kê doanh thu theo ngày, tháng, năm</p>
+                                    <p class="pl-3">+ Báo cáo doanh thu theo từng chi nhánh</p>
+                                    <p class="pl-3">+ Thống kê số lượng đơn hàng</p>
+                                    <p class="pl-3">+ Báo cáo món ăn bán chạy</p>
+                                    <p class="pl-3">+ Hỗ trợ biểu đồ và số liệu phục vụ phân tích kinh doanh</p>
+
+                                    <p class="font-bold">4.2. Chức năng – phần dành cho nhân viên bán hàng:</p>
+                                    <p>- Đăng nhập hệ thống</p>
+                                    <p>- Chọn bàn ăn / hình thức bán</p>
+                                    <p>- Thêm, sửa, hủy món trong đơn hàng</p>
+                                    <p>- Theo dõi đơn hàng, in hóa đơn/thực hiện thanh toán cho khách hàng</p>
+                                    <p>- Xem lịch sử bán hàng</p>
+
+                                    <p class="font-bold">4.3. Chức năng – phần dành cho người dùng:</p>
+                                    <p>- Xem thực đơn và giá bán, phòng, bàn trống</p>
+                                    <p>- Đặt phòng, bàn trống, đặt món ăn (Không cần đăng nhập – hệ thống lưu số điên
+                                        thoại, họ tên,…)</p>
+                                    <p>- Thanh toán, đánh giá dịch vụ, đánh giá món</p>
+
+                                    <p class="font-bold">4.4. Tích hợp trí tuệ nhân tạo (AI) trong hệ thống:</p>
+                                    <p>- Phân tích doanh thu, món bán chạy và khung giờ cao điểm.</p>
+                                    <p>- Tích hợp chatbot AI tư vấn thực đơn, đặt món/đặt bàn và theo dõi đơn hàng.</p>
+                                    <p>- Phân tích dữ liệu bán hàng và ca làm việc để đánh giá hiệu suất nhân viên</p>
+                                    <p>- AI phân tích dữ liệu bán hàng trong quá khứ để dự báo nhu cầu tiêu thụ, hỗ trợ
+                                        nhập thực phẩm hợp lý, giảm lãng phí và thiếu hụt.</p>
+                                    <p>- Tích hợp chatbot AI hỗ trợ tư vấn thực đơn, đặt bàn, đặt phòng và theo dõi đơn
+                                        giao hàng tự động.</p>
+                                    <p>- Phân tích dữ liệu bán hàng và ca làm việc để hỗ trợ đánh giá hiệu suất làm việc
+                                        của nhân viên.</p>
+                                    <p class="font-bold">4.5. Kỹ thuật:</p>
+                                    <p>- Backend:</p>
+                                    <p class="pl-3">+ C# (ASP.NET Core Web API) hoặc Java (Spring Boot)</p>
+                                    <p class="pl-3">+ Áp dụng một số Design Pattern: Repository, Service, DI, …</p>
+                                    <p class="pl-3">+ Cơ sở dữ liệu: SQL Server</p>
+                                    <p>- Frontend: ReactJS, Angular, Vue.js,…..</p>
+                                    <p>- Triển khai: Đóng gói và deploy hệ thống bằng Docker hoặc triển khai trực tiếp
+                                        trên
+                                        máy chủ/Cloud.</p>
+                                    <p>- Làm việc nhóm: Sử dụng Git để quản lý mã nguồn và phối hợp phát triển.</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Số sinh viên</td>
                                 <td class="border border-gray-300 p-3">
-                                    2
+                                    3
                                 </td>
                             </tr>
                         </tbody>
@@ -81,46 +147,116 @@
                         <tbody>
                             <tr>
                                 <td class="border border-gray-300 p-3" style="width: 20%;">Tên đề tài 2</td>
-                                <td class="border border-gray-300 p-3">
-                                    Xây dựng ứng dụng web bán máy tính
+                                <td class="border border-gray-300 p-3 font-bold">
+                                    Xây dựng hệ thống quản lý chuỗi phòng trọ
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Tóm tắt nội dung</td>
                                 <td class="border border-gray-300 p-3 space-y-3">
-                                    Xây dựng ứng dụng web bán máy tính, cho phép người mua xem sản phẩm, đặt hàng
-                                    online.
+                                    Hệ thống hỗ trợ quản lý nhiều khu phòng trọ, cho phép quản lý phòng, người thuê, hợp
+                                    đồng, điện nước, hóa đơn, doanh thu và chức năng tìm kiếm phòng theo trạng thái, giá
+                                    và khu trọ, giúp quản lý hiệu quả, chính xác và dễ mở rộng.
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Các yêu cầu cần đạt được:</td>
                                 <td class="border border-gray-300 p-3 space-y-3">
-                                    <p>a. Các chức năng xác thực người dùng</p>
-                                    <ul>
-                                        <li>- Đăng ký</li>
-                                        <li>- Đăng nhập</li>
-                                        <li>- Đăng xuất</li>
-                                        <li>- Reset mật khẩu</li>
-                                    </ul>
-                                    <p> b. Các chức năng bán hàng:</p>
-                                    <ul>
-                                        <li>- Hiển thị danh sách sản phẩm, chi tiết sản phẩm</li>
-                                        <li>- Giỏ hàng, thanh toán</li>
-                                        <li>- Xem thông tin người dùng</li>
-                                    </ul>
-                                    <p>c.Các chức năng quản trị</p>
-                                    <ul>
-                                        <li>- Quản lý user</li>
-                                        <li>- Quản lý sản phẩm</li>
-                                        <li>- Quản lý đơn hàng</li>
-                                        <li>- ...</li>
-                                    </ul>
+                                    <p class="font-bold">4.1. Chức năng – phần quản trị</p>
+                                    <p>- Quản lý thông tin khu trọ:</p>
+                                    <p class="pl-3">+ Quản lý thông tin chung của khu trọ</p>
+                                    <p class="pl-3">+ Gán quản lý phụ trách cho từng khu (nếu có)</p>
+                                    <p class="pl-3">+ Phân quyền theo khu trọ</p>
+
+                                    <p>- Quản lý phòng theo khu trọ:</p>
+                                    <p class="pl-3">+ Thông tin phòng: loại phòng, giá phòng, diện tích, trạng thái,
+                                        thuộc khu trọ, hình
+                                        ảnh, …</p>
+                                    <p class="pl-3">+ Sức chứa của phòng, hỗ trợ chức năng ghép phòng, cho phép thêm
+                                        nhiều người thuê
+                                        vào cùng một phòng nhưng không vượt quá sức chứa quy định</p>
+                                    <p class="pl-3">+ Hiển thị chi tiết phòng: danh sách người thuê, tình trạng sử dụng
+                                    </p>
+                                    <p>- Quản lý người thuê:</p>
+                                    <p class="pl-3">+ Quản lý thông tin chi tiết người thuê: họ tên, ngày sinh, CCCD,
+                                        liên hệ, hình
+                                        ảnh,…</p>
+                                    <p class="pl-3">+ Gán người thuê vào phòng, trạng thái thuê phòng</p>
+                                    <p class="pl-3">+ Theo dõi thời gian thuê và lịch sử thuê phòng</p>
+                                    <p>- Quản lý hợp đồng thuê:</p>
+                                    <p class="pl-3">+ Lập và quản lý hợp đồng thuê phòng</p>
+                                    <p class="pl-3">+ Thông tin hợp đồng: phòng thuê, thời gian thuê, giá thuê, tiền
+                                        đặt cọc, danh sách
+                                        người thuê cùng 1 phòng</p>
+                                    <p class="pl-3">+ Theo dõi trạng thái hợp đồng: đang cho thuê, sắp hết hạn, …..</p>
+                                    <p>- Quản lý hóa đơn:</p>
+                                    <p class="pl-3">+ Tạo hóa đơn thuê phòng theo tháng cho từng phòng trong mỗi khu
+                                        trọ</p>
+                                    <p class="pl-3">+ Mỗi hóa đơn bao gồm:</p>
+                                    <p class="pl-6">o Tiền thuê phòng
+                                    <p class="pl-6">o Tiền điện (chỉ số đầu – cuối kỳ): lưu trữ ngày giờ ghi điện</p>
+                                    <p class="pl-6">o Tiền nước (chỉ số đầu – cuối kỳ): lưu trữ ngày giờ ngày ghi nước
+                                    </p>
+                                    <p class="pl-6">o Các dịch vụ khác</p>
+                                    <p class="pl-3">+ Trạng thái hóa đơn: mới tạo – chưa thanh toán, đã thanh toán,
+                                        thanh toán 1 phần, …</p>
+                                    <p class="pl-3">+ Hình thức thanh toán: Tiền mặt, Chuyển khoản, trường hợp tạo mã
+                                        Quét QR=> hệ thống
+                                        tự cập nhật trang thái hóa đơn</p>
+                                    <p class="pl-3">+ Ghi nhận lịch sử thanh toán: ngày thanh toán, số tiền, hình thức
+                                        thanh toán</p>
+                                    <p>- Báo cáo, thống kê:</p>
+                                    <p class="pl-3">+ Báo cáo phòng: thống kê số lượng phòng, phòng trống, đã cho thuê,
+                                        phòng còn ghép
+                                        bổ sung</p>
+                                    <p class="pl-3">+ Báo cáo doanh thu: tháng, năm, khu trọ, phòng, biểu đồ so sánh
+                                    </p>
+                                    <p class="pl-3">+ Báo cáo hóa hơn: đã thanh toán, chưa thanh toán, còn nợ</p>
+                                    <p class="pl-3">+ Tổng hợp công nợ theo phòng, người thuê, khu trọ</p>
+                                    <p class="pl-3">+ Báo cáo điện nước, các dịch vụ khác.</p>
+                                    <p class="pl-3">+ Lọc báo cáo, xuất báo cáo (PDF/Excel)</p>
+                                    <p>- Thông báo tự động:</p>
+                                    <p class="pl-3">+ Thông báo tới kỳ phải nhập số liệu điện, nước, các dịch vụ khác
+                                    </p>
+                                    <p class="pl-3">+ Thông báo hóa đơn cần thanh toán, còn nợ</p>
+                                    <p class="pl-3">+ Thông báo hợp đồng sắp hết hạn</p>
+                                    <p class="pl-3">+ Thông báo nhận doanh thu</p>
+                                    <p>- Tích hợp trí tuệ nhân tạo (AI) trong hệ thống:</p>
+                                    <p class="pl-3">+ Phát hiện mức tiêu thụ điện, nước tăng/giảm bất thường</p>
+                                    <p class="pl-3">+ AI gợi ý phòng phù hợp cho người tìm phòng</p>
+
+                                    <p class="font-bold">4.2. Chức năng – phần người dùng (Web)</p>
+                                    <p class="font-bold">4.2.1. Dành cho Người mới tìm phòng</p>
+                                    <p>- Truy cập hệ thống không cần đăng nhập, xem danh sách phòng trống</p>
+                                    <p>- Tìm kiếm phòng theo: khu trọ, giá, sức chứa, loại phòng,…</p>
+                                    <p>- Xem chi tiết phòng: giá thuê, diện tích, hình ảnh, trạng thái,…</p>
+                                    <p>- Tích hợp AI gợi ý phòng phù hợp dựa trên nhu cần tìm kiếm</p>
+                                    <p>- Đăng ký xem phòng, đăng ký tài khoản khi có nhu cầu thuê phòng.</p>
+
+                                    <p class="font-bold">4.2.2. Dành cho người thuê</p>
+                                    <p>- Đăng nhập / đăng xuất hệ thống, thay đổi thông tin</p>
+                                    <p>- Xem thông tin phòng đang thuê</p>
+                                    <p>- Xem thông tin hợp đồng thuê</p>
+                                    <p>- Xem hóa đơn, công nợ, chỉ số điện nước theo tháng</p>
+                                    <p>- Nhận thông báo tự động: nhắc thanh toán, nhắc sắp hết hạn hợp đồng</p>
+                                    <p>- Xem lịch sử thanh toán</p>
+
+                                    <p class="font-bold">4.3. Kỹ thuật:</p>
+                                    <p>- Backend:</p>
+                                    <p class="pl-3">+ C# (ASP.NET Core Web API) hoặc Java (Spring Boot)</p>
+                                    <p class="pl-3">+ Áp dụng một số Design Pattern : Repository, Service, DI, …</p>
+                                    <p class="pl-3">+ Cơ sở dữ liệu: SQL Server</p>
+                                    <p>- Frontend: ReactJS, Angular, Vue.js,…..</p>
+                                    <p>- Triển khai: Đóng gói và deploy hệ thống bằng Docker hoặc triển khai trực tiếp
+                                        trên
+                                        máy chủ/Cloud.</p>
+                                    <p>- Làm việc nhóm: Sử dụng Git để quản lý mã nguồn và phối hợp phát triển.</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Số sinh viên</td>
                                 <td class="border border-gray-300 p-3">
-                                    2
+                                    3
                                 </td>
                             </tr>
                         </tbody>
