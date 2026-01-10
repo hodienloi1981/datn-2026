@@ -1,7 +1,7 @@
 const list_giaovien = [
     { id: 1, 'name': 'Trần Anh Khoa', 'link': 'trananhkhoa.html' },
     // { id: 2, 'name': 'Hoàng Trọng Thạch', 'link': 'hoangtrongthach.html' },
-    // { id: 3, 'name': 'Nguyễn Minh Trường', 'link': 'nguyenminhtruong.html' },
+    { id: 3, 'name': 'Nguyễn Minh Trường', 'link': 'nguyenminhtruong.html' },
     // { id: 4, 'name': 'Huỳnh Trọng Đức', 'link': 'huynhtrongduc.html' },
     { id: 5, 'name': 'Nguyễn Thị Thu Cúc', 'link': 'nguyenthithucuc.html' },
     { id: 6, 'name': 'Chu Thị Mai', 'link': 'chuthimai.html' },
@@ -13,7 +13,7 @@ const list_giaovien = [
     { id: 12, 'name': 'Đặng Hồng Hiệp', 'link': 'danghonghiep.html' },
     // { id: 13, 'name': 'Bùi Trọng Viên', 'link': 'buitrongvien.html' },
     // { id: 14, 'name': 'Thái Thị Huyên', 'link': 'thaithihuyen.html' },
-    // { id: 15, 'name': 'Huỳnh Tấn Phát', 'link': 'huynhtanphat.html' },
+    { id: 15, 'name': 'Huỳnh Tấn Phát', 'link': 'huynhtanphat.html' },
     { id: 16, 'name': 'Trần Nhật Nam', 'link': 'trannhatnam.html' },
     { id: 17, 'name': 'Lê Thị Tố Thi', 'link': 'lethitothi.html' },
     // { id: 18, 'name': 'Hoàng Mạnh Hùng', 'link': 'hoangmanhhung.html' },

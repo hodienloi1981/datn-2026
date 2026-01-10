@@ -33,46 +33,118 @@
                         <tbody>
                             <tr>
                                 <td class="border border-gray-300 p-3" style="width: 20%;">Tên đề tài 1</td>
-                                <td class="border border-gray-300 p-3">
-                                    Xây dựng ứng dụng web bán hàng quần áo thời trang
+                                <td class="border border-gray-300 p-3 font-bold">
+                                    XÂY DỰNG SÀN GIAO DỊCH BẤT ĐỘNG SẢN THÔNG MINH ĐA NỀN TẢNG THEO KIẾN TRÚC
+                                    MICROSERVICE, TRIỂN KHAI BẰNG DOCKER
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Tóm tắt nội dung</td>
                                 <td class="border border-gray-300 p-3 space-y-3">
-                                    Xây dựng ứng dụng web bán hàng quần áo thời trang, cho phép người mua xem sản phẩm,
-                                    đặt hàng online.
+                                    <p class="font-bold">3. Tóm tắt nội dung:</p>
+                                    <p>
+                                        Đề tài tập trung xây dựng một hệ thống sàn thương mại điện tử chuyên biệt cho
+                                        lĩnh vực bất động sản, hoạt động trên cả hai nền tảng Web và Mobile App. Hệ
+                                        thống được thiết kế theo kiến trúc Microservice, chia nhỏ các nghiệp vụ thành
+                                        các dịch vụ độc lập để dễ dàng mở rộng và bảo trì, được đóng gói và triển khai
+                                        tự động hóa bằng Docker.
+                                    </p>
+                                    <p>
+                                        Hệ thống hoạt động như một sàn giao dịch trung gian: Người bán (Môi giới/Chủ
+                                        nhà) có thể nạp tiền vào ví điện tử để trả phí đăng tin hoặc mua các gói dịch vụ
+                                        ưu tiên hiển thị (Tin VIP, đẩy tin). Người mua có thể tìm kiếm bất động sản
+                                        thông minh theo vị trí, khoảng giá và các tiện ích xung quanh. Dữ liệu hành vi
+                                        người dùng được thu thập để phân tích và gợi ý các bất động sản phù hợp nhất.
+                                        Ngoài ra, hệ thống tích hợp Chatbot AI để hỗ trợ tư vấn sơ bộ và giải đáp thắc
+                                        mắc tự động.
+                                    </p>
+                                    <p class="font-bold">➤ Các công nghệ được sử dụng :</p>
+                                    <p>- Frontend: ReactJS (Web), React Native (Mobile App)</p>
+                                    <p>- Backend: Java Spring Boot</p>
+
+                                    <p class="font-bold">➤ Kiến trúc: Microservice</p>
+                                    <p>- Cơ sở dữ liệu: PostgreSQL</p>
+                                    <p>- Giao tiếp: REST API, API Gateway</p>
+                                    <p>- Bảo mật: JWT</p>
+                                    <p>- Container: Docker, Docker Compose</p>
+
+                                    <p class="font-bold">➤ AI hỗ trợ: Chatbot API</p>
+                                    <p class="font-bold">➤ Công cụ: Jira/Trello, Git, Postman, Agile/Scrum, CI/CD
+                                        (Jenkin)</p>
+                                    <p class="font-bold">➤ Hạ tầng triển khai: AWS (EC2, RDS, API Gateway – mô phỏng)
+                                    </p>
+                                    <p class="font-bold">➤ Hệ thống tổng quát:</p>
+                                    <p>Hệ thống bao gồm các Microservice chính:</p>
+
+                                    <p>– Identity Service: Quản lý người dùng, xác thực (Auth), phân quyền (Admin, Môi
+                                        giới, Người tìm).</p>
+                                    <p>– Property Service: Quản lý tin đăng, danh mục BĐS, xử lý hình ảnh/video.</p>
+                                    <p>– Payment & Wallet Service: Quản lý ví tiền, lịch sử giao dịch, tích hợp cổng
+                                        thanh toán (Giả lập hoặc thực tế).</p>
+                                    <p>– Search & Recommendation Service: Tìm kiếm nâng cao, gợi ý tin đăng.</p>
+                                    <p>– Chatbot & Support Service: Xử lý hội thoại tự động.</p>
+
+                                    <p class="font-bold">→ Frontend Web và Mobile App giao tiếp với hệ thống qua API
+                                        Gateway</p>
+                                    <p class="font-bold">➤ Phân công công việc:</p>
+                                    <p class="font-bold">SINH VIÊN 1: THỰC HIỆN LẬP TRÌNH FRONTEND WEB (REACTJS): </p>
+                                    <p>– Xây dựng giao diện Web cho hệ thống</p>
+                                    <p>– Xây dựng trang quản trị (Admin Dashboard): Quản lý người dùng, duyệt tin đăng,
+                                        xem
+                                        báo cáo doanh thu,chat realtime.</p>
+                                    <p>– Xây dựng trang cá nhân cho Môi giới: Quản lý tin đã đăng, thao tác nạp tiền,
+                                        xem
+                                        lịch sử trừ tiền,chat realtime.</p>
+                                    <p>– Xây dựng trang chủ: Các thông tin về bất động sản, trang filter tìm lọc, Map
+                                        bản
+                                        đồ khu vực,chat realtime,Chatbox Ai,gợi ý đề xuất</p>
+                                    <p>– Gọi và tối ưu UI/UX hiển thị dữ liệu từ các REST API của hệ thống Microservice
+                                    </p>
+                                    <p class="font-bold"> SINH VIÊN 2: THỰC HIỆN LẬP TRÌNH MOBILE APP</p>
+                                    <p>– Xây dựng ứng dụng Mobile cho hệ thống</p>
+                                    <p>– Xây dựng chức năng tìm kiếm BĐS dựa trên vị trí hiện tại (sử dụng GPS và Bản
+                                        đồ)</p>
+                                    <p>– Chức năng nhắn tin, đăng tin nhanh trên điện thoại (chụp ảnh, upload).</p>
+                                    <p>– Nhận thông báo (Notification) khi có khách hàng liên hệ hoặc khi tin đăng sắp
+                                        hết
+                                        hạn.</p>
+                                    <p>– Đồng bộ dữ liệu tài khoản và ví với nền tảng Web</p>
+                                    <p>– Chatbox AI</p>
+                                    <p class="font-bold"> SINH VIÊN 3: THỰC HIỆN LẬP TRÌNH – BACKEND (THỐNG KÊ, CÁ NHÂN
+                                        HÓA & AI)</p>
+                                    <p>– Xây dựng Identity Service: Đăng ký, đăng nhập, JWT, phân quyền.</p>
+                                    <p>– Xây dựng Property Service: CRUD tin đăng, quản lý địa chính (Tỉnh/Huyện/Xã),
+                                        upload file</p>
+                                    <p>– Thiết lập cấu hình Docker & Docker Compose cho toàn bộ nhóm để chạy hệ thống.
+                                    </p>
+                                    <p>– Thiết kế CSDL</p>
+                                    <p>– Đóng gói service bằng Docker</p>
+                                    <p class="font-bold"> SINH VIÊN 4: THỰC HIỆN LẬP TRÌNH – BACKEND (FINTECH, ANALYTICS
+                                        & AI)</p>
+                                    <p>– Xây dựng Payment & Wallet Service: Logic ví điện tử (cộng/trừ tiền), quản lý
+                                        bảng
+                                        giá dịch vụ (Tin thường/Tin VIP).</p>
+                                    <p>– Xây dựng Analytics Service: Thống kê số lượt xem, báo cáo doanh thu hệ thống.
+                                    </p>
+                                    <p>– Tích hợp Chatbot API và API gợi ý bất động sản.</p>
+                                    <p>– Chat Realtime (Websocket), Notification</p>
+                                    <p>– Đóng gói và triển khai service bằng Docker.</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Các yêu cầu cần đạt được:</td>
                                 <td class="border border-gray-300 p-3 space-y-3">
-                                    <p>a. Các chức năng xác thực người dùng</p>
-                                    <ul>
-                                        <li>- Đăng ký</li>
-                                        <li>- Đăng nhập</li>
-                                        <li>- Đăng xuất</li>
-                                        <li>- Reset mật khẩu</li>
-                                    </ul>
-                                    <p> b. Các chức năng bán hàng:</p>
-                                    <ul>
-                                        <li>- Hiển thị danh sách sản phẩm, chi tiết sản phẩm</li>
-                                        <li>- Giỏ hàng, thanh toán</li>
-                                        <li>- Xem thông tin người dùng</li>
-                                    </ul>
-                                    <p>c.Các chức năng quản trị</p>
-                                    <ul>
-                                        <li>- Quản lý user</li>
-                                        <li>- Quản lý sản phẩm</li>
-                                        <li>- Quản lý đơn hàng</li>
-                                        <li>- ...</li>
-                                    </ul>
+                                    <p>– Áp dụng kiến trúc Microservice rõ ràng.</p>
+                                    <p>– Các service được đóng gói và triển khai bằng Docker.</p>
+                                    <p>– Hệ thống hoạt động ổn định, có dữ liệu minh họa.</p>
+                                    <p>– Có báo cáo đồ án đầy đủ các chương theo quy định.</p>
+
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Số sinh viên</td>
                                 <td class="border border-gray-300 p-3">
-                                    2
+                                    4
                                 </td>
                             </tr>
                         </tbody>
@@ -81,46 +153,97 @@
                         <tbody>
                             <tr>
                                 <td class="border border-gray-300 p-3" style="width: 20%;">Tên đề tài 2</td>
-                                <td class="border border-gray-300 p-3">
-                                    Xây dựng ứng dụng web bán máy tính
+                                <td class="border border-gray-300 p-3 font-bold">
+                                    XÂY DỰNG HỆ THỐNG HỌC TẬP TRỰC TUYẾN CÁ NHÂN HÓA CHO LẬP TRÌNH VIÊN THEO KIẾN TRÚC
+                                    MICROSERVICE, TRIỂN KHAI BẰNG DOCKER
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Tóm tắt nội dung</td>
                                 <td class="border border-gray-300 p-3 space-y-3">
-                                    Xây dựng ứng dụng web bán máy tính, cho phép người mua xem sản phẩm, đặt hàng
-                                    online.
+                                    <p>Đề tài tập trung xây dựng một hệ thống học tập trực tuyến đa nền tảng (Web và
+                                        Mobile) theo kiến trúc Microservice, trong đó các chức năng được tách thành các
+                                        dịch vụ độc lập và được đóng gói, triển khai bằng Docker. </p>
+                                    <p>Hệ thống cho phép người học tham gia các khóa học lập trình, xem bài giảng, làm
+                                        bài trắc nghiệm và theo dõi tiến độ học tập. Dữ liệu học tập của người dùng được
+                                        thu thập và phân tích nhằm phân loại học viên theo năng lực, từ đó đề xuất nội
+                                        dung học tập phù hợp. Ngoài ra, hệ thống tích hợp chatbot hỗ trợ học tập nhằm hỗ
+                                        trợ giải đáp và định hướng nội dung học tiếp theo. </p>
+                                    <p>
+                                        Việc áp dụng Microservice kết hợp Docker giúp hệ thống có khả năng mở rộng, dễ
+                                        bảo trì, phù hợp với xu hướng phát triển phần mềm hiện đại và đáp ứng yêu cầu về
+                                        hàm lượng khoa học – công nghệ của đồ án tốt nghiệp ngành Công nghệ thông tin –
+                                        Ứng dụng phần mềm.
+                                    </p>
+                                    <p class="font-bold">➤ Các công nghệ được sử dụng :</p>
+                                    <p>➤ <b>Kiến Trúc:</b> Microservice</p>
+                                    <p>– Cơ sở dữ liệu: PostgreSQL (Dữ liệu quan hệ), MongoDB (Dữ liệu khóa học/log).
+                                    </p>
+                                    <p>– Giao tiếp: REST API, API Gateway.</p>
+                                    <p>– Bảo Mật: JWT (JSON Web Token).</p>
+                                    <p>– Container: Docker, Docker Compose.</p>
+                                    <p>➤ <b>AI:</b> Chatbot API</p>
+                                    <p>➤ <b>Công Cụ:</b> Git, Postman, Agile/Scrum.</p>
+                                    <p>➤ <b>DevOps & Hạ tầng: Docker, Docker Compose, Jenkins (CI/CD), AWS (EC2, S3,
+                                            RDS).</b></p>
+                                    <p>➤ <b>Hệ thống tổng quát: </b>được xây dựng theo kiến trúc Microservice, gồm các
+                                        Microservice chính.</p>
+                                    <p class="font-bold">➤ </p>
+                                    <p>• User Service: Quản lý người dùng & phân quyền.</p>
+                                    <p>• Course Service: Quản lý khóa học, bài học. </p>
+                                    <p>• Quiz Service: Trắc nghiệm & chấm điểm. </p>
+                                    <p>• Analytics Service: Thống kê & cá nhân hóa. </p>
+                                    <p>• AI/Chatbot Service: Phân tích và hổ trợ người học. </p>
+                                    <p>- </p>
+                                    <p class="font-bold">→ Mỗi service được đóng gói trong container Docker và triển
+                                        khai thông qua Docker Compose. Frontend Web và Mobile giao tiếp với các service
+                                        thông qua API Gateway.</p>
+                                    <p>➤ Phân công công việc:</p>
+
+                                    <p class="font-bold">SINH VIÊN 1 – THỰC HIỆN LẬP TRÌNH FRONTEND WEB (REACTJS)</p>
+                                    <p>• Xây dựng giao diện Web cho hệ thống.</p>
+                                    <p>• Các chức năng: đăng nhập/đăng ký, danh sách khóa học, học bài, làm trắc nghiệm,
+                                        theo dõi tiến độ và trang quản trị.</p>
+                                    <p>• Gọi và hiển thị dữ liệu từ các REST API của hệ thống Microservice.</p>
+
+                                    <p class="font-bold">SINH VIÊN 2 – THỰC HIỆN LẬP TRÌNH MOBILE APP (REACT NATIVE)</p>
+                                    <p>• Xây dựng ứng dụng Mobile cho hệ thống.</p>
+                                    <p>• Các chức năng chính: đăng nhập, xem khóa học, học bài, làm trắc nghiệm, xem kết
+                                        quả.</p>
+                                    <p>• Kết nối các REST API của hệ thống Microservice.</p>
+
+                                    <p class="font-bold">SINH VIÊN 3 – THỰC HIỆN LẬP TRÌNH BACKEND JAVA (HỆ THỐNG LÕI &
+                                        CƠ SỞ HẠ TẦNG)</p>
+
+                                    <p>• Xây dựng các Microservice bằng Java Spring Boot .</p>
+                                    <p>• Thiết kế cơ sở dữ liệu cho từng service.
+                                    <p>• Xây dựng API quản lý người dùng, khóa học, bài học.</p>
+                                    <p>• Chat Realtime (WebSocket), Notification.</p>
+                                    <p>• Đóng gói và triển khai service bằng Docker.</p>
+
+                                    <p class="font-bold">SINH VIÊN 4 – THỰC HIỆN LẬP TRÌNH BACKEND JAVA (THỐNG KÊ, CÁ
+                                        NHÂN HÓA & AI)</p>
+                                    <p>• Xây dựng service thống kê và phân tích dữ liệu học tập.</p>
+                                    <p>• Phân loại học viên theo năng lực.</p>
+                                    <p>• Xây dựng logic đề xuất nội dung học tập.</p>
+                                    <p>• Tích hợp chatbot AI.</p>
+                                    <p>• Đóng gói và triển khai service bằng Docker.</p>
+
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Các yêu cầu cần đạt được:</td>
                                 <td class="border border-gray-300 p-3 space-y-3">
-                                    <p>a. Các chức năng xác thực người dùng</p>
-                                    <ul>
-                                        <li>- Đăng ký</li>
-                                        <li>- Đăng nhập</li>
-                                        <li>- Đăng xuất</li>
-                                        <li>- Reset mật khẩu</li>
-                                    </ul>
-                                    <p> b. Các chức năng bán hàng:</p>
-                                    <ul>
-                                        <li>- Hiển thị danh sách sản phẩm, chi tiết sản phẩm</li>
-                                        <li>- Giỏ hàng, thanh toán</li>
-                                        <li>- Xem thông tin người dùng</li>
-                                    </ul>
-                                    <p>c.Các chức năng quản trị</p>
-                                    <ul>
-                                        <li>- Quản lý user</li>
-                                        <li>- Quản lý sản phẩm</li>
-                                        <li>- Quản lý đơn hàng</li>
-                                        <li>- ...</li>
-                                    </ul>
+                                    <p>- Áp dụng kiến trúc Microservice rõ ràng.</p>
+                                    <p>- Các service được đóng gói và triển khai bằng Docker.</p>
+                                    <p>- Hệ thống hoạt động ổn định, có dữ liệu minh họa.</p>
+                                    <p>- Có báo cáo đồ án đầy đủ các chương theo quy định.</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Số sinh viên</td>
                                 <td class="border border-gray-300 p-3">
-                                    2
+                                    4
                                 </td>
                             </tr>
                         </tbody>
