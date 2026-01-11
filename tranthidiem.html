@@ -33,46 +33,137 @@
                         <tbody>
                             <tr>
                                 <td class="border border-gray-300 p-3" style="width: 20%;">Tên đề tài 1</td>
-                                <td class="border border-gray-300 p-3">
-                                    Xây dựng ứng dụng web bán hàng quần áo thời trang
+                                <td class="border border-gray-300 p-3 font-bold">
+                                    Xây dựng hệ thống quản lý chuỗi bảo trì xe máy
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Tóm tắt nội dung</td>
                                 <td class="border border-gray-300 p-3 space-y-3">
-                                    Xây dựng ứng dụng web bán hàng quần áo thời trang, cho phép người mua xem sản phẩm,
-                                    đặt hàng online.
+                                    Đề tài tập trung xây dựng một hệ thống nhằm quản lý tập trung chuỗi các cửa hàng bảo
+                                    trì, sửa chữa xe máy, hỗ trợ quản lý thông tin cửa hàng, khách hàng, phương tiện,
+                                    dịch vụ. Qua đó nâng cao hiệu quả vận hành và cải thiện chất lượng phục vụ khách
+                                    hàng. Hệ thống được triển khai trên nền tảng web, ứng dụng công nghệ thông tin nhằm
+                                    số hóa quy trình quản lý và hỗ trợ ra quyết định trong hoạt động bảo trì, sửa chữa.
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Các yêu cầu cần đạt được:</td>
                                 <td class="border border-gray-300 p-3 space-y-3">
-                                    <p>a. Các chức năng xác thực người dùng</p>
-                                    <ul>
-                                        <li>- Đăng ký</li>
-                                        <li>- Đăng nhập</li>
-                                        <li>- Đăng xuất</li>
-                                        <li>- Reset mật khẩu</li>
-                                    </ul>
-                                    <p> b. Các chức năng bán hàng:</p>
-                                    <ul>
-                                        <li>- Hiển thị danh sách sản phẩm, chi tiết sản phẩm</li>
-                                        <li>- Giỏ hàng, thanh toán</li>
-                                        <li>- Xem thông tin người dùng</li>
-                                    </ul>
-                                    <p>c.Các chức năng quản trị</p>
-                                    <ul>
-                                        <li>- Quản lý user</li>
-                                        <li>- Quản lý sản phẩm</li>
-                                        <li>- Quản lý đơn hàng</li>
-                                        <li>- ...</li>
-                                    </ul>
+                                    <p class="font-bold">4.1. Kỹ thuật:</p>
+                                    <p>- Backend:</p>
+                                    <p class="pl-4">+ C# (ASP.NET Core Web API) hoặc Java (Spring Boot)</p>
+                                    <p class="pl-4">+ Áp dụng một số Design Pattern : Repository, Service, DI, …</p>
+                                    <p class="pl-4">+ Cơ sở dữ liệu: SQL Server</p>
+                                    <p>- Frontend: ReactJS, Angular, Vue.js,…..</p>
+                                    <p>- Triển khai: Đóng gói và deploy hệ thống bằng Docker hoặc triển khai trực tiếp
+                                        trên
+                                        máy chủ/Cloud.</p>
+                                    <p>- Làm việc nhóm: Sử dụng Git để quản lý mã nguồn và phối hợp phát triển.</p>
+
+                                    <p class="font-bold">4.2. Chức năng – phần dành cho quản trị:</p>
+                                    <p>- Quản lý các cửa hàng bảo trì: Cho phép thêm, sửa, xóa thông tin cửa hàng và chi
+                                        nhánh; quản lý địa chỉ, thông tin liên hệ, giờ làm việc và trạng thái hoạt động
+                                        của
+                                        từng chi nhánh; phân quyền quản lý theo chi nhánh.</p>
+                                    <p>- Quản lý nhân viên và phân quyền sử dụng hệ thống:</p>
+                                    <p class="pl-4">+ Quản lý hồ sơ nhân viên (họ tên, thông tin liên hệ, vị trí công
+                                        việc).</p>
+                                    <p class="pl-4">+ Phân loại nhân viên theo từng vai trò, bao gồm: quản trị viên,
+                                        quản lý cửa hàng,
+                                        nhân viên kỹ thuật và nhân viên thu ngân, gán nhân viên làm việc tại từng cửa
+                                        hàng.</p>
+                                    <p class="pl-4">+ Quản lý tài khoản đăng nhập và phân quyền sử dụng hệ thống theo
+                                        vai trò.</p>
+                                    <p class="pl-4">+ Lưu trữ và theo dõi lịch sử hoạt động của nhân viên trên hệ thống.
+                                    </p>
+                                    <p>- Quản lý kho vật tư, phụ tùng:</p>
+                                    <p class="pl-4">+ Quản lý danh mục vật tư, phụ tùng sử dụng trong bảo trì và sửa
+                                        chữa xe máy.</p>
+                                    <p class="pl-4">+ Theo dõi số lượng tồn kho theo từng cửa hàng.</p>
+                                    <p class="pl-4">+ Thực hiện nhập kho, xuất kho và cập nhật tồn kho tự động khi sử
+                                        dụng dịch vụ.</p>
+                                    <p class="pl-4">+ Cảnh báo vật tư, phụ tùng sắp hết, tra cứu lịch sử nhập, xuất kho
+                                        phục vụ quản lý
+                                        và báo cáo.</p>
+
+                                    <p>- Quản lý khách hàng và thông tin xe máy (biển số, loại xe):</p>
+                                    <p class="pl-4">+ Lưu trữ và quản lý thông tin khách hàng</p>
+                                    <p class="pl-4">+ Quản lý thông tin xe máy :biển số, loại xe, hãng xe</p>
+                                    <p class="pl-4">+ Theo dõi lịch sử bảo trì, sửa chữa của từng xe.</p>
+                                    <p>- Quản lý danh mục dịch vụ bảo trì, sửa chữa và bảng giá:</p>
+                                    <p class="pl-4">+ Quản lý thông tin dịch vụ bao gồm: tên dịch vụ, loại dịch vụ (bảo
+                                        trì, sửa chữa,
+                                        thay thế phụ tùng, rửa xe,…), mô tả, thời gian thực hiện, ngày nhận xe và ngày
+                                        giao
+                                        xe.</p>
+                                    <p class="pl-4">+ Quản lý bảng giá dịch vụ, cho phép thay đổi linh hoạt theo từng
+                                        cửa hàng, chương
+                                        trình khuyến mãi và các chương trình mua kèm.</p>
+
+                                    <p>- Quản lý lịch bảo trì, sửa chữa theo xe và theo cửa hàng</p>
+                                    <p class="pl-4">+ Hệ thống cho phép lập và quản lý lịch bảo trì, sửa chữa cho từng
+                                        xe máy tại các
+                                        cửa hàng trong chuỗi</p>
+                                    <p class="pl-4">+ Cho phép đặt lịch bảo trì, sửa chữa theo ngày và khung giờ cụ thể
+                                    </p>
+                                    <p class="pl-4">+ Quản lý và theo dõi lịch bảo trì theo từng cửa hàng</p>
+                                    <p class="pl-4">+ Hỗ trợ nhắc lịch bảo trì định kỳ tự động cho khách hàng trước 10
+                                        ngày</p>
+
+                                    <p>- Quản lý hóa đơn, thanh toán và công nợ:</p>
+                                    <p class="pl-4">+ Lập và quản lý hóa đơn dịch vụ bảo trì, sửa chữa.</p>
+                                    <p class="pl-4">+ Theo dõi trạng thái thanh toán và các hình thức thanh toán.
+                                        (Trường hợp quét QR
+                                        theo đơn hàng , hệ thống tự cập nhật trạng thái thanh toán)</p>
+                                    <p class="pl-4">+ Quản lý công nợ khách hàng và lịch sử thanh toán.</p>
+                                    <p class="pl-4">+ Tra cứu, thống kê hóa đơn phục vụ quản lý và báo cáo.</p>
+
+                                    <p>- Tìm kiếm: khách hàng , thông tin cửa hàng, tìm kiếm dịch vụ bảo trì, sửa chữa,
+                                        lịch bảo trì, sửa chữa, hóa đơn và thanh toán, lọc và sắp xếp dữ liệu, ….</p>
+
+                                    <p>- Thống kê, báo cáo doanh thu:</p>
+                                    <p class="pl-4">+ Thống kê doanh thu theo thời gian, dịch vụ</p>
+                                    <p class="pl-4">+ Báo cáo doanh thu theo cửa hàng</p>
+                                    <p class="pl-4">+ Thống kê số lượt bảo trì, sửa chữa</p>
+                                    <p class="pl-4">+ Báo cáo tổng hợp dưới dạng bảng và biểu đồ</p>
+                                    <p>- Hỗ trợ xuất báo cáo dưới dạng file Excel, PDF</p>
+
+                                    <p class="font-bold">4.3. Chức năng – phần dành cho nhân viên kỹ thuật: (Web/Mobile)
+                                    </p>
+                                    <p>- Đăng nhập hệ thống.</p>
+                                    <p>- Xem danh sách các xe cần thực hiện bảo trì, sửa chữa theo cửa hàng và lịch đã
+                                        phân
+                                        công.</p>
+                                    <p>- Cập nhật trạng thái quá trình bảo trì, sửa chữa và thông tin thay thế phụ tùng.
+                                    </p>
+                                    <p>- Ghi nhận kết quả sửa chữa, thời gian thực hiện và các chi phí phát sinh liên
+                                        quan.</p>
+                                    <p>- Quét biển số xe qua ứng dụng để tra cứu nhanh thông tin xe, tự động hiển thị
+                                        lịch
+                                        sử bảo trì, sửa chữa của xe.</p>
+
+                                    <p class="font-bold">4.4. Phần dành cho người dùng (khách hàng): (Web)</p>
+                                    <p>- Đăng nhập và quản lý thông tin cá nhân trên hệ thống.</p>
+                                    <p>- Đăng ký lịch bảo trì, sửa chữa xe theo nhu cầu.</p>
+                                    <p>- Xem lịch sử bảo trì và hóa đơn liên quan.</p>
+                                    <p>- Nhận thông báo nhắc lịch bảo trì định kỳ.</p>
+                                    <p>- Đánh giá chất lượng dịch vụ.</p>
+                                    <p>- Đối với người dùng chưa đăng ký tài khoản, hệ thống cho phép xem bảng giá và
+                                        thông
+                                        tin chi phí các dịch vụ bảo trì, sửa chữa.</p>
+
+                                    <p class="font-bold">4.5. Tích hợp trí tuệ nhân tạo (AI) trong hệ thống:</p>
+                                    <p>- Dự đoán nhu cầu bảo trì dựa trên lịch sử sử dụng xe.</p>
+                                    <p>- Gợi ý dịch vụ bảo trì phù hợp cho từng loại xe.</p>
+                                    <p>- Phân tích doanh thu và dịch vụ được sử dụng nhiều.</p>
+                                    <p>- Chatbot AI hỗ trợ đặt lịch và tư vấn dịch vụ.</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Số sinh viên</td>
                                 <td class="border border-gray-300 p-3">
-                                    2
+                                    3
                                 </td>
                             </tr>
                         </tbody>
@@ -81,46 +172,101 @@
                         <tbody>
                             <tr>
                                 <td class="border border-gray-300 p-3" style="width: 20%;">Tên đề tài 2</td>
-                                <td class="border border-gray-300 p-3">
-                                    Xây dựng ứng dụng web bán máy tính
+                                <td class="border border-gray-300 p-3 font-bold">
+                                    Xây dựng hệ thống quản lý CV, đồ án lập trình và thông tin tuyển dụng cho Khoa Công
+                                    nghệ Thông tin
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Tóm tắt nội dung</td>
                                 <td class="border border-gray-300 p-3 space-y-3">
-                                    Xây dựng ứng dụng web bán máy tính, cho phép người mua xem sản phẩm, đặt hàng
-                                    online.
+                                    <p>- Quản lý CV, đồ án lập trình của sinh viên khoa CNTT</p>
+                                    <p>- Hỗ trợ giảng viên theo dõi, đánh giá năng lực sinh viên</p>
+                                    <p>- Cung cấp kênh đăng tin tuyển dụng cho doanh nghiệp</p>
+                                    <p>- Tăng khả năng kết nối sinh viên với thị trường lao động</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Các yêu cầu cần đạt được:</td>
                                 <td class="border border-gray-300 p-3 space-y-3">
-                                    <p>a. Các chức năng xác thực người dùng</p>
-                                    <ul>
-                                        <li>- Đăng ký</li>
-                                        <li>- Đăng nhập</li>
-                                        <li>- Đăng xuất</li>
-                                        <li>- Reset mật khẩu</li>
-                                    </ul>
-                                    <p> b. Các chức năng bán hàng:</p>
-                                    <ul>
-                                        <li>- Hiển thị danh sách sản phẩm, chi tiết sản phẩm</li>
-                                        <li>- Giỏ hàng, thanh toán</li>
-                                        <li>- Xem thông tin người dùng</li>
-                                    </ul>
-                                    <p>c.Các chức năng quản trị</p>
-                                    <ul>
-                                        <li>- Quản lý user</li>
-                                        <li>- Quản lý sản phẩm</li>
-                                        <li>- Quản lý đơn hàng</li>
-                                        <li>- ...</li>
-                                    </ul>
+                                    <p class="font-bold">4.1. Kỹ thuật:</p>
+                                    <p>- Backend:</p>
+                                    <p class="pl-4">+ C# (ASP.NET Core Web API) hoặc Java (Spring Boot)</p>
+                                    <p class="pl-4">+ Áp dụng một số Design Pattern : Repository, Service, DI, …</p>
+                                    <p class="pl-4">+ Cơ sở dữ liệu: SQL Server</p>
+                                    <p>- Frontend: ReactJS, Angular, Vue.js,…..</p>
+                                    <p>- Triển khai: Đóng gói và deploy hệ thống bằng Docker hoặc triển khai trực tiếp
+                                        trên
+                                        máy chủ/Cloud.</p>
+                                    <p>- Làm việc nhóm: Sử dụng Git để quản lý mã nguồn và phối hợp phát triển.</p>
+
+                                    <p class="font-bold">4.2. Chức năng – phần dành cho sinh viên:</p>
+                                    <p>- Đăng nhập, đăng xuất, cập nhật thông tin cá nhân, nhận thông báo từ giảng viên,
+                                        quản trị viên, …</p>
+                                    <p>- Tạo và chỉnh sửa CV cá nhân : Thông tin cá nhân, mục tiêu nghề nghiệp, ngôn ngữ
+                                        lập trình, kinh nghiệm thực tập, chứng chỉ,….</p>
+                                    <p>- Tạo thông tin lưu trữ đồ án đã thực hiện trong quá trình học: tên đồ án, môn
+                                        học,
+                                        thời gian thực hiện, mô tả đồ án, công nghệ sử dụng, link chứa mã nguồn,
+                                        ảnh/video
+                                        demo sản phẩm, ….</p>
+                                    <p>- Theo dõi đánh giá và nhận xét của giảng viên (nếu có)</p>
+                                    <p>- Theo dõi lượt xem, lượt đánh giá, lượt tải source code …..</p>
+                                    <p>- Xem thông tin tuyển dụng</p>
+
+                                    <p class="font-bold">4.3. Chức năng – phần dành cho giảng viên:</p>
+                                    <p>- Đăng nhập, đăng xuất, cập nhật thông tin cá nhân</p>
+                                    <p>- Xem hồ sơ CV của sinh viên để đánh giá tổng quan năng lực sinh viên</p>
+                                    <p>- Xem danh sách các đồ án môn học do mình phụ trách, hoặc các đồ án khi được cấp
+                                        quyền</p>
+                                    <p>- Đánh giá đồ án và mã nguồn nhằm hỗ trợ sinh viên cải thiện chất lượng mã nguồn
+                                        và
+                                        gởi thông báo đánh giá đến sinh viên</p>
+                                    <p>- Hỗ trợ đề xuất sinh viên phù hợp cho doanh nghiệp</p>
+                                    <p>- Lựa chọn đồ án có tính ứng dụng cao triển khai cho doanh nghiệp tạo nguồn thu
+                                        cho
+                                        khoa/ sinh viên</p>
+
+                                    <p class="font-bold">4.4. Chức năng – Phần dành cho quản trị khoa:</p>
+                                    <p>- Đăng nhập, đăng xuất, cập nhật thông tin cá nhân</p>
+                                    <p>- Quản lý thông tin tài khoản giảng viên, sinh viên, cấp lại mật khẩu, phân quyền
+                                        sử
+                                        dụng theo vai trò</p>
+                                    <p>- Quản lý danh sách môn học và đồ án sinh viên theo môn học</p>
+                                    <p>- Kiểm soát CV sinh viên và công bố hồ sơ:</p>
+                                    <p class="pl-4">+ Theo dõi toàn bộ CV của sinh viên</p>
+                                    <p class="pl-4">+ Duyệt CV trước khi công bố</p>
+                                    <p class="pl-4">+ CV đã được công bố sinh viên không được chỉnh sửa</p>
+                                    <p class="pl-4">+ Mọi thay đổi phải thông qua ticket yêu cầu cập nhật</p>
+                                    <p>- Đăng tin tuyển dụng, kiểm soát nội dung tin tuyển dụng trước khi công bố</p>
+                                    <p>- Thống kê số lượng sinh viên, CV, đồ án môn học, lượt xem, lượt tải nhiều nhất,
+                                        ..</p>
+                                    <p>- Ghi nhận lịch sử thao tác của người dùng</p>
+
+                                    <p class="font-bold">4.5. Chức năng – Phần dành cho khách/ nhà tuyển dụng:</p>
+                                    <p>- Xem và tìm kiếm CV, danh sách đồ án và source code của sinh viên đã được công
+                                        bố.</p>
+                                    <p>- Xem và tải source code của sinh viên theo quyền được cấp.</p>
+                                    <p>- Gửi yêu cầu hợp tác hoặc thương mại hóa source code theo quy trình quản lý của
+                                        Khoa CNTT.</p>
+
+                                    <p class="font-bold">4.6. Tích hợp trí tuệ nhân tạo (AI) trong hệ thống:</p>
+                                    <p>- AI hỗ trợ đánh giá mức độ đầy đủ của CV và gợi ý cải thiện hồ sơ sinh viên.</p>
+                                    <p>- AI hỗ trợ gợi ý sinh viên phù hợp với tin tuyển dụng dựa trên kỹ năng và đồ án
+                                        đã
+                                        thực hiện.</p>
+                                    <p>- AI hỗ trợ thống kê:</p>
+                                    <p class="pl-4">+ Thống kê đồ án được xem nhiều nhất</p>
+                                    <p class="pl-4">+ Thống kê CV được quan tâm nhiều nhất</p>
+                                    <p class="pl-4">+ Thống kê ngôn ngữ lập trình được quan tâm nhiều nhất</p>
+                                    <p>- Chatbot AI hỗ trợ tìm kiếm sinh viên, đồ án phù hợp (mức cơ bản)</p>
+
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Số sinh viên</td>
                                 <td class="border border-gray-300 p-3">
-                                    2
+                                    3
                                 </td>
                             </tr>
                         </tbody>

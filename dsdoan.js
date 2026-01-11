@@ -194,8 +194,20 @@ const list_doan = [
     },
     // { id: 37, name: 'Tên đề tài 1', teacher: 'Hoàng Mạnh Hùng', 'link': 'hoangmanhung.html', number: 2 },
     // { id: 38, name: 'Tên đề tài 2', teacher: 'Hoàng Mạnh Hùng', 'link': 'hoangmanhung.html', number: 2 },
-    // { id: 39, name: 'Tên đề tài 1', teacher: 'Trần Thị Diễm', 'link': 'tranthidiem.html', number: 2 },
-    // { id: 40, name: 'Tên đề tài 2', teacher: 'Trần Thị Diễm', 'link': 'tranthidiem.html', number: 2 },
+    {
+        id: 39,
+        name: 'Xây dựng hệ thống quản lý chuỗi bảo trì xe máy ',
+        teacher: 'Trần Thị Diễm',
+        link: 'tranthidiem.html',
+        number: 3,
+    },
+    {
+        id: 40,
+        name: 'Xây dựng hệ thống quản lý CV, đồ án lập trình và thông tin tuyển dụng cho Khoa Công nghệ Thông tin',
+        teacher: 'Trần Thị Diễm',
+        link: 'tranthidiem.html',
+        number: 3,
+    },
 ];
 var html_tr = ``;
 var stt = 1;
