@@ -15,16 +15,17 @@ const list_giaovien = [
     // { id: 14, 'name': 'Thái Thị Huyên', 'link': 'thaithihuyen.html' },
     { id: 15, 'name': 'Huỳnh Tấn Phát', 'link': 'huynhtanphat.html' },
     { id: 16, 'name': 'Trần Nhật Nam', 'link': 'trannhatnam.html' },
-    { id: 17, 'name': 'Lê Thị Tố Thi', 'link': 'lethitothi.html' },
-    // { id: 18, 'name': 'Hoàng Mạnh Hùng', 'link': 'hoangmanhhung.html' },
-    // { id: 19, 'name': 'Trần Thị Diễm', 'link': 'tranthidiem.html' },
-    // { id: 20, 'name': 'Trần Anh Khoa', 'link': 'trananhkhoa.html' },
+    { id: 17, 'name': 'Vũ Thị Hường', 'link': 'vuthihuong.html' },
+    { id: 18, 'name': 'Lê Thị Tố Thi', 'link': 'lethitothi.html' },
+    // { id: 19, 'name': 'Hoàng Mạnh Hùng', 'link': 'hoangmanhhung.html' },
+    // { id: 20, 'name': 'Trần Thị Diễm', 'link': 'tranthidiem.html' },
     // { id: 21, 'name': 'Trần Anh Khoa', 'link': 'trananhkhoa.html' },
-    // { id: 22, 'name': 'Trần Anh Khoa', 'link': 'trananhkhoa.html' },
     // { id: 22, 'name': 'Trần Anh Khoa', 'link': 'trananhkhoa.html' },
     // { id: 23, 'name': 'Trần Anh Khoa', 'link': 'trananhkhoa.html' },
     // { id: 24, 'name': 'Trần Anh Khoa', 'link': 'trananhkhoa.html' },
     // { id: 25, 'name': 'Trần Anh Khoa', 'link': 'trananhkhoa.html' },
+    // { id: 26, 'name': 'Trần Anh Khoa', 'link': 'trananhkhoa.html' },
+    // { id: 27, 'name': 'Trần Anh Khoa', 'link': 'trananhkhoa.html' },
 ];
 var html_link = ``;
 var index = 1;

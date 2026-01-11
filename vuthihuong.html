@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vũ Thị Hường</title>
+    <link rel="icon" type="image/png" href="https://github.com/hodienloi1981/datn-2026/blob/master/hitu.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class="bg-[#0578D4] text-white">
+        <div class="mx-auto md:px-4 px-2 p-3">
+            <h1 class="md:text-3xl text-xl md:text-left text-center">
+                <a href="index.html">
+                    DANH SÁCH ĐỒ ÁN TỐT NGHIỆP
+                </a>
+            </h1>
+            <h2 class="md:text-2xl text-md md:text-left text-center">Khoa công nghệ thông tin</h2>
+        </div>
+    </header>
+    <main class="py-5">
+        <div class="mx-auto md:px-4 px-2">
+            <div class="flex md:flex-row flex-col gap-4">
+                <div class="md:basis-2/12 md:order-1 order-2">
+                    <h2 class="text-xl font-bold">DANH SÁCH GIÁO VIÊN</h2>
+                    <ul class="flex flex-col" id="list_giaovien"></ul>
+                </div>
+                <div class="md:basis-10/12 md:order-2 order-1">
+                    <h1 class="text-3xl pb-3 font-bold md:text-left text-center">VŨ THỊ HƯỜNG</h1>
+                    <table class="w-full border-collapse border-2 border-gray-600 mb-4">
+                        <tbody>
+                            <tr>
+                                <td class="border border-gray-300 p-3" style="width: 20%;">Tên đề tài 1</td>
+                                <td class="border border-gray-300 p-3 font-bold">
+                                    Triển khai hệ thống phòng thủ mạng đa lớp (IDS/IPS) và ứng dụng AI trong nhận diện
+                                    tấn công Phishing/Malware
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3">Tóm tắt nội dung</td>
+                                <td class="border border-gray-300 p-3  space-y-3">
+                                    <p>- Xây dựng hàng rào bảo mật với Firewall pfSense, hệ thống phát hiện xâm nhập
+                                        (Suricata) và quản lý sự kiện an ninh (Wazuh). Tích hợp AI để phân tích các hành
+                                        vi tấn công phức tạp.</p>
+                                    <p>- Rèn luyện kỹ năng thiết lập chính sách bảo mật, kỹ thuật tấn công thử nghiệm
+                                        (Penetration Testing) cơ bản và khả năng ứng phó sự cố.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3">Các yêu cầu cần đạt được:</td>
+                                <td class="border border-gray-300 p-3  space-y-3">
+                                    <p>a. Khảo sát mô hình doanh nghiệp, thiết kế sơ đồ mạng; cài đặt, cấu hình hệ thống
+                                    </p>
+                                    <p>b. Hệ thống phải chặn được các cuộc tấn công phổ biến (DDoS, Port Scanning, Brute
+                                        Force).</p>
+                                    <p>c. Phân quyền truy cập mạng (VLAN, Rules) chặt chẽ.</p>
+                                    <p>d. Phần AI: Sử dụng AI để phân loại log và gán nhãn các hành vi nghi ngờ là mã
+                                        độc
+                                        hoặc lừa đảo (Phishing) với độ chính xác cao hơn bộ lọc thông thường.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3">Số sinh viên</td>
+                                <td class="border border-gray-300 p-3">
+                                    2
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="w-full border-collapse border-2 border-gray-600">
+                        <tbody>
+                            <tr>
+                                <td class="border border-gray-300 p-3" style="width: 20%;">Tên đề tài 2</td>
+                                <td class="border border-gray-300 p-3 font-bold">
+                                    Thiết kế và triển khai hạ tầng mạng doanh nghiệp trên nền tảng ảo hóa
+                                    (Proxmox/ESXi), tích hợp AI Assistant để tự động hóa quản trị.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3">Tóm tắt nội dung</td>
+                                <td class="border border-gray-300 p-3 space-y-3">
+                                    <p>- Xây dựng trọn gói hạ tầng từ lớp ảo hóa (Proxmox/ESXi) đến các dịch vụ Windows Server (AD, DNS, DHCP, File Server). </p>
+                                    <p>- Tiếp cận xu hướng tự động hóa: Ứng dụng Ansible để tự động hóa và AI để hỗ trợ người dùng.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3">Các yêu cầu cần đạt được:</td>
+                                <td class="border border-gray-300 p-3  space-y-3">
+                                    <p>a. Khảo sát, thiết kế hệ thống: xây dựng kich bản doanh nghiệp, Thiết kế sơ đồ mạng, lập bảng kế hoạch,..</p>
+                                    <p>b. Triển khai hạ tầng ảo hóa và dịch vụ: Dịch vụ Windows Server hoạt động ổn định, máy trạm Join Domain và nhận chính sách (GPO) thành công; Triển khai được hệ thống backup và VPN truy cập từ xa,…</p>
+                                    <p>c. Phần AI: Xây dựng được 01 Chatbot hỗ trợ kỹ thuật nội bộ hoặc dùng AI để tự động viết các script quản trị hệ thống, giúp giảm tải công việc cho admin.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3">Số sinh viên</td>
+                                <td class="border border-gray-300 p-3">
+                                    2
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-black text-white">
+        <div class="mx-auto md:md-4 md-2">
+            <h4 class="text-xs py-3 text-center">Khoa CNTT - Trường cao đẳng Công Thương TP Hồ Chí Minh</h4>
+        </div>
+    </footer>
+    <script src="giaovien.js"></script>
+</body>
+
+</html>
