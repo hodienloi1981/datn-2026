@@ -73,22 +73,6 @@ const list_doan = [
         link: 'phamvanson.html',
         number: 2,
     },
-    // { id: 15, name: 'Tên đề tài 1', teacher: 'Trương Quang Mạnh', 'link': 'truongquangmanh.html', number: 2 },
-    // { id: 16, name: 'Tên đề tài 2', teacher: 'Trương Quang Mạnh', 'link': 'truongquangmanh.html', number: 2 },
-    // {
-    //     id: 17,
-    //     name: 'Xây dựng website gia sư',
-    //     teacher: 'Hồ Diên Lợi',
-    //     link: 'hodienloi.html',
-    //     number: 4,
-    // },
-    // {
-    //     id: 18,
-    //     name: 'Xây dựng website thi trắc nghiệm',
-    //     teacher: 'Hồ Diên Lợi',
-    //     link: 'hodienloi.html',
-    //     number: 4,
-    // },
     {
         id: 19,
         name: 'Xây dựng ứng dụng đặt phòng khách sạn',
@@ -98,7 +82,7 @@ const list_doan = [
     },
     {
         id: 20,
-        name: 'Tên đề tài 2',
+        name: 'Xây dựng ứng dụng đặt vé xem phim',
         teacher: 'Nguyễn Thái Khánh Quyên',
         link: 'nguyenthaikhanhquyen.html',
         number: 2,
@@ -132,10 +116,6 @@ const list_doan = [
         link: 'danghonghiep.html',
         number: 2,
     },
-    // { id: 25, name: 'Tên đề tài 1', teacher: 'Bùi Trọng Viên', 'link': 'buitrongvien.html', number: 2 },
-    // { id: 26, name: 'Tên đề tài 2', teacher: 'Bùi Trọng Viên', 'link': 'buitrongvien.html', number: 2 },
-    // { id: 27, name: 'Tên đề tài 1', teacher: 'Thái Thị Huyên', 'link': 'thaithihuyen.html', number: 2 },
-    // { id: 28, name: 'Tên đề tài 2', teacher: 'Thái Thị Huyên', 'link': 'thaithihuyen.html', number: 2 },
     {
         id: 29,
         name: 'XÂY DỰNG SÀN GIAO DỊCH BẤT ĐỘNG SẢN THÔNG MINH ĐA NỀN TẢNG THEO KIẾN TRÚC MICROSERVICE, TRIỂN KHAI BẰNG DOCKER',
@@ -211,6 +191,7 @@ const list_doan = [
 ];
 var html_tr = ``;
 var stt = 1;
+var tong = 0;
 list_doan.forEach((item) => {
     html_tr += `
         <tr>
@@ -229,5 +210,7 @@ list_doan.forEach((item) => {
         </tr>
     `;
     stt = stt + 1;
+    tong = tong + item.number;
 });
 document.getElementById('dsdoan').innerHTML = html_tr;
+document.getElementById('tong').innerHTML = tong;
