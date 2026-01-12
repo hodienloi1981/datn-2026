@@ -73,34 +73,133 @@
                             <tr>
                                 <td class="border border-gray-300 p-3" style="width: 20%;">Tên đề tài 2</td>
                                 <td class="border border-gray-300 p-3 font-bold">
-                                    Phân tích dữ liệu lớn (Big Data) cho an ninh mạng
+                                    XÂY DỰNG HỆ THỐNG MẠNG XÃ HỘI TRỰC TUYẾN ĐA NỀN TẢNG
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Tóm tắt nội dung</td>
                                 <td class="border border-gray-300 p-3 space-y-3">
-                                    Sử dụng thuật toán Support Vector Machines (SVM), Decision Trees, và Random Forests
-                                    để xây dựng một dữ liệu gán nhãn để phân loại các mẫu tấn công mạng
+                                    <p>
+                                        Đề tài xây dựng hệ thống mạng xã hội trực tuyến đa nền tảng (Web và Mobile) theo
+                                        kiến trúc microservices, cho phép người dùng đăng ký, đăng nhập, kết nối bạn bè,
+                                        đăng bài viết, chia sẻ hình ảnh/video, bình luận, tương tác (like, share), nhắn
+                                        tin trực tiếp, tham gia nhóm cộng đồng và nhận thông báo thời gian thực.
+                                    </p>
+                                    <p>
+                                        Hệ thống được chia thành các dịch vụ độc lập, giao tiếp với nhau thông qua API,
+                                        giúp dễ dàng mở rộng, bảo trì và nâng cấp. Dữ liệu người dùng được thu thập và
+                                        phân tích để đề xuất kết nối và nội dung phù hợp và có thể phát triển mở rộng
+                                        bằng cách tích hợp AI để phân tích, đánh giá các bình luận tiêu cực. Việc triển
+                                        khai bằng Docker giúp đảm bảo tính linh hoạt, nhất quán và đáp ứng yêu cầu về
+                                        tính hiện đại, khả năng ứng dụng thực tế của đồ án tốt nghiệp ngành Công nghệ
+                                        thông tin – Ứng dụng phần mềm.
+                                    </p>
+                                    <p class="font-bold">• Các công nghệ được sử dụng:</p>
+                                    <p class="pl-4">- Frontend: ReactJS (Web), React Native (Mobile App).</p>
+                                    <p class="pl-4">- Backend: Java Spring Boot</p>
+                                    <p class="font-bold">• Kiến Trúc: Microservice</p>
+                                    <p class="pl-4">- Cơ sở dữ liệu: PostgreSQL (Dữ liệu quan hệ), MongoDB (Dữ liệu bài
+                                        viết, tin nhắn,
+                                        tùy chọn).</p>
+                                    <p class="pl-4">- Giao tiếp: REST API, WebSocket (chat, thông báo real-time).</p>
+                                    <p class="pl-4">- Bảo Mật: JWT (JSON Web Token).</p>
+                                    <p class="pl-4">- Container: Docker, Docker Compose.</p>
+                                    <p class="font-bold">• AI: sử dụng các mô hình AI có sẵn để hỗ trợ phân tích nội
+                                        dung văn bản ở mức cơ
+                                        bản.</p>
+                                    <p class="font-bold">• Công Cụ: Git, Postman.</p>
+                                    <p class="font-bold">• DevOps & Hạ tầng: Docker, Docker Compose, Gitlab (CI/CD), AWS
+                                        (EC2, S3, RDS).</p>
+
+                                    <p class="font-bold">• Hệ thống tổng quát: Được xây dựng theo kiến trúc
+                                        microservices, trong đó mỗi chức
+                                        năng được triển khai thành một dịch vụ độc lập:</p>
+                                    <p class="pl-4">- User Service: Quản lý người dùng, xác thực, phân quyền và kết nối
+                                        bạn bè.</p>
+                                    <p class="pl-4">- Post Service: Quản lý bài viết, hình ảnh, video, bình luận và các
+                                        tương tác (like,
+                                        share).</p>
+                                    <p class="pl-4">- Messaging Service: Nhắn tin trực tiếp và nhóm chat.</p>
+                                    <p class="pl-4">- Notification Service: Xử lý thông báo thời gian thực.</p>
+                                    <p class="pl-4">- Recommendation Service: Phân tích hành vi người dùng để đề xuất
+                                        kết
+                                        nối và nội
+                                        dung phù hợp.</p>
+                                    <p class="font-bold">→ Các dịch vụ giao tiếp với nhau thông qua REST API, được đóng
+                                        gói bằng Docker và
+                                        triển khai, quản lý bằng Docker Compose. Frontend Web và Mobile kết nối đến hệ
+                                        thống
+                                        thông qua API Gateway.</p>
+                                    <p class="font-bold">• Phân công công việc:</p>
+                                    <p class="font-bold">🔹 SINH VIÊN 1 – FRONTEND WEB (REACTJS)</p>
+                                    <p class="pl-4">- Vai trò: Phát triển giao diện Web và tích hợp các dịch vụ backend
+                                    </p>
+                                    <p class="pl-4">- Xây dựng giao diện Web cho hệ thống mạng xã hội.</p>
+                                    <p class="pl-4">- Các chức năng:</p>
+                                    <p class="pl-8">1. Đăng nhập / Đăng ký</p>
+                                    <p class="pl-8">2. Trang cá nhân</p>
+                                    <p class="pl-8">3. Đăng bài, hiển thị bảng tin</p>
+                                    <p class="pl-8">4. Kết nối bạn bè</p>
+                                    <p class="pl-8">5. Nhắn tin</p>
+                                    <p class="pl-8">6. Nhận thông báo</p>
+                                    <p class="pl-8">7. Tích hợp và gọi dữ liệu từ các Microservices backend thông qua
+                                        REST API</p>
+                                    <p class="pl-8">8. Xử lý trạng thái giao diện và phân quyền người dùng.</p>
+                                    <p class="font-bold">🔹 SINH VIÊN 2 – MOBILE APP (REACT NATIVE)</p>
+                                    <p class="pl-4">- Vai trò: Phát triển ứng dụng di động và tích hợp hệ thống dịch vụ
+                                    </p>
+                                    <p class="pl-4">- Xây dựng ứng dụng Mobile cho hệ thống (React Native).</p>
+                                    <p class="pl-4">- Các chức năng chính:</p>
+                                    <p class="pl-8">1. Đăng nhập / Đăng ký</p>
+                                    <p class="pl-8">2. Đăng bài</p>
+                                    <p class="pl-8">3. Tương tác với bạn bè</p>
+                                    <p class="pl-8">4. Nhắn tin</p>
+                                    <p class="pl-8">5. Nhận thông báo</p>
+                                    <p class="pl-8">6. Kết nối và đồng bộ dữ liệu với các Microservices backend thông
+                                        qua REST API</p>
+                                    <p class="pl-8">7. Tối ưu trải nghiệm người dùng trên thiết bị di động</p>
+                                    <p class="font-bold">🔹 SINH VIÊN 3 – BACKEND MICROSERVICES (CORE SERVICES)</p>
+                                    <p class="pl-4">- Vai trò: Phát triển các dịch vụ lõi của hệ thống</p>
+                                    <p class="pl-4">- Thiết kế kiến trúc backend theo mô hình Microservices.</p>
+                                    <p class="pl-4">- Xây dựng các dịch vụ chính bằng Java Spring Boot.</p>
+                                    <p class="pl-4">- Auth Service: xác thực, đăng nhập, phân quyền (JWT).</p>
+                                    <p class="pl-4">- User Service: quản lý thông tin người dùng, hồ sơ cá nhân.</p>
+                                    <p class="pl-4">- Post Service: quản lý bài viết, tương tác (like, comment).</p>
+                                    <p class="pl-4">- Thiết kế cơ sở dữ liệu cho từng service (database per service hoặc
+                                        schema riêng).</p>
+                                    <p class="pl-4">- Xây dựng REST API phục vụ Web và Mobile.</p>
+                                    <p class="pl-4">- Xử lý logic nghiệp vụ cốt lõi.</p>
+                                    <p class="font-bold">🔹 SINH VIÊN 4 – BACKEND MICROSERVICES (REAL-TIME & SUPPORT
+                                        SERVICES)</p>
+                                    <p class="pl-4">- Vai trò: Phát triển các dịch vụ hỗ trợ và thời gian thực</p>
+                                    <p class="pl-4">- Phát triển Chat Service sử dụng WebSocket cho nhắn tin real-time.
+                                    </p>
+                                    <p class="pl-4">- Xây dựng Notification Service cho thông báo thời gian thực.</p>
+                                    <p class="pl-4">- Phát triển Recommendation Service:</p>
+                                    <p class="pl-4">- Đề xuất kết nối bạn bè.</p>
+                                    <p class="pl-4">- Đề xuất nội dung dựa trên hành vi người dùng (ở mức cơ bản).</p>
+                                    <p class="pl-4">- Xây dựng Media Service:</p>
+                                    <p class="pl-4">- Upload và quản lý hình ảnh, video.</p>
+                                    <p class="pl-4">- Thực hiện đóng gói các dịch vụ bằng Docker.</p>
+                                    <p class="pl-4">- Triển khai hệ thống theo mô hình container hóa.</p>
+
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Các yêu cầu cần đạt được:</td>
                                 <td class="border border-gray-300 p-3">
                                     <ul class="space-y-3">
-                                        <li>a. Xây dựng được hệ thống giả lập</li>
-                                        <li>b. Phân tích dữ liệu cho thuật toán VSM</li>
-                                        <li>c. Phân tích dữ liệu cho thuật toán Decision Trees</li>
-                                        <li>d. Phân tích dữ liệu cho thuật toán Random Forests</li>
-                                        <li>e. So sách 3 thuật toán trên</li>
-                                        <li>f. Tạo ra các mẫu tấn công</li>
-                                        <li>g. Thực hiện kiểm thử với các mẫu và đưa ra bản so sánh</li>
+                                        <li>a. Hệ thống được thiết kế rõ ràng, dễ bảo trì</li>
+                                        <li>b. Hệ thống được đóng gói và triển khai bằng Docker</li>
+                                        <li>c. Hệ thống hoạt động ổn định, có dữ liệu minh họa</li>
+                                        <li>d. Có báo cáo đồ án đầy đủ các chương theo quy định</li>
                                     </ul>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border border-gray-300 p-3">Số sinh viên</td>
                                 <td class="border border-gray-300 p-3">
-                                    2
+                                    4
                                 </td>
                             </tr>
                         </tbody>

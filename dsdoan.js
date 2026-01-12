@@ -74,6 +74,20 @@ const list_doan = [
         number: 2,
     },
     {
+        id: 15,
+        name: 'Xây dựng web Gia Sư',
+        teacher: 'Hồ Diên Lợi',
+        link: 'hodienloi.html',
+        number: 2,
+    },
+    {
+        id: 16,
+        name: 'Xây dựng web thi trắc nghiệm trực tuyến',
+        teacher: 'Hồ Diên Lợi',
+        link: 'hodienloi.html',
+        number: 2,
+    },
+    {
         id: 19,
         name: 'Xây dựng ứng dụng đặt phòng khách sạn',
         teacher: 'Nguyễn Thái Khánh Quyên',
@@ -111,10 +125,10 @@ const list_doan = [
     },
     {
         id: 24,
-        name: 'Phân tích dữ liệu lớn (Big Data) cho an ninh mạng',
+        name: 'XÂY DỰNG HỆ THỐNG MẠNG XÃ HỘI TRỰC TUYẾN ĐA NỀN TẢNG',
         teacher: 'Đặng Hồng Hiệp',
         link: 'danghonghiep.html',
-        number: 2,
+        number: 4,
     },
     {
         id: 29,
